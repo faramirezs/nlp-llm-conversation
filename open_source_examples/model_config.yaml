@@ -3,18 +3,18 @@
 #    - Check with: `ollama serve`
 #    - If you see "address already in use", Ollama is already running
 #    - If not running, start with: `ollama serve`
-# 
+#
 # 2. Before using a model, pull it first:
 #    - Example: `ollama pull mistral`
 #    - Available models: https://ollama.ai/library
-#    - Other examples: 
+#    - Other examples:
 #      * ollama pull llama2
 #      * ollama pull codellama
 #      * ollama pull phi
 
 # Model Configuration
 model:
-  name: "mistral"  # The model to use (must be pulled via ollama first!)
+  name: "phi4"  # The model to use (must be pulled via ollama first!)
   temperature: 0.7
   max_tokens: 1000
   top_p: 0.9
@@ -34,4 +34,4 @@ output:
 processing:
   batch_size: 10  # Number of messages to process in each batch
   max_context_messages: 5  # Number of previous messages to include for context
-  min_confidence_threshold: 0.7  # Minimum confidence score to accept a prediction 
+  min_confidence_threshold: 0.7  # Minimum confidence score to accept a prediction
