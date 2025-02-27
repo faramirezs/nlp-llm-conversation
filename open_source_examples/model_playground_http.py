@@ -84,7 +84,8 @@ class MistralConversationDetector:
             response = requests.post(f"{self.base_url}/api/chat", json={
                 "model": self.model,
                 "messages": [{"role": "system", "content": "test"}]
-            })
+            }, timeout=10
+            )
 
             if response.status_code == 404:
                 # Try older API format
@@ -198,7 +199,7 @@ No headers, no quotes, no additional text."""
                         "options": {
                             "temperature": 0.3
                         }
-                    }
+                    }, timeout=60
                 )
             except:
                 # Fallback to older generate API
