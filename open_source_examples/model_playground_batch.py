@@ -22,7 +22,7 @@ class ModelLabeler:
         self.script_dir = os.path.dirname(os.path.abspath(__file__))
         self.config = self._load_config(config_path)
         self.client = Client()
-        self.model_name = self.config['model']['name']
+        self.model_name = self.config['model']['names']
         self.prompt = self._load_prompt()
 
     def _load_config(self, config_path: str) -> Dict[str, Any]:
