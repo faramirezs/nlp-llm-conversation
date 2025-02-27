@@ -77,7 +77,7 @@ class ConversationDetector:
                 ])
 
 # Read the conversation detection prompt
-PROMPT_FILE = os.path.join(os.path.dirname(__file__), 'conversation_detection_prompt.txt')
+PROMPT_FILE = os.path.join(os.path.dirname(__file__), 'open_source_examples/prompts/conversation_detection_prompt.txt')
 with open(PROMPT_FILE, 'r') as f:
     exec(f.read())  # This will load CONVERSATION_DETECTION_PROMPT
 

@@ -685,7 +685,7 @@ The project uses a flexible model configuration system that allows you to easily
    - Configuration specifies the prompt file:
    ```yaml
    prompt:
-     path: "conversation_detection_prompt.txt"
+     path: "open_source_examples/prompts/conversation_detection_prompt.txt"
    ```
 
 3. **Output Configuration**
