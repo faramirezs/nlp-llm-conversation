@@ -1,0 +1,23 @@
+message_id,conversation_id,topic,timestamp,labeler_id,confidence
+1,1,Email from a company offering a free trial of their product,20201201161400,phi:latest,1.0
+2,1,Email from the company about their product,20201201173000,phi:latest,1.0
+3,2,Email from a customer asking for help with their order,20201201190000,phi:latest,1.0
+4,2,Reply to the customer's email,20201202101500,phi:latest,1.0
+5,3,Message about a meeting with potential investors,20201203093000,phi:latest,1.0
+6,3,Reply to the message about the meeting,20210101024500,phi:latest,1.0
+7,3,Follow-up email about the investors meeting,20210105123000,phi:latest,1.0
+8,4,Message from a customer thanking the company for their help,20201202094500,phi:latest,1.0
+9,4,Reply to the message from the customer,20210108101500,phi:latest,1.0
+10,5,Message about a new product launch,20201203113000,phi:latest,1.0
+11,5,Reply to the message about the product launch,20210105134500,phi:latest,1.0
+1,1,Dogs New YearsBot,20250501120000,phi:latest,1.0
+2,1,AirDrop TON COIN!,20250501120500,phi:latest,1.0
+3,2,Don't miss your chance!🌟,20250501130230,phi:latest,1.0
+4,3,Receiving your prize in the mail!😍,20250501140300,phi:latest,1.0
+5,2,Don't miss out on this amazing offer🚀,20250501140420,phi:latest,1.0
+6,1,Spam Message❗️🐶❗️🔍💸❗️❗️❗️❗️❗️❗️❗️❗️❗️,20250227191535,phi:latest,1.0
+7,3,You have won 1.64 ethereum!🎉🙌💰📈🚀,20250501150520,phi:latest,1.0
+8,2,More offers from @Cere.io,20250601110000,phi:latest,1.0
+9,1,Another spam message❗️🐶❗️👃💸😍🔎🚀❗️❗️❗️❗️❗️❗️,20250227191535,phi:latest,1.0
+10,3,You have just been awarded 1.64 ethereum! 🎉🙌🏻💰📈🚀💸😍👃👀🔍💯🚀❗️❗️❗️❗️❗️❗️,20250227191535,phi:latest,1.0
+11,2,More offers from @Cere.io 👀🏻👂🐶💸😍🔎🚀❗️❗…,20250227191535,phi:latest,1.0
