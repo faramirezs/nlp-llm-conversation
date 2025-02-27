@@ -1,0 +1,190 @@
+message_id,conversation_id,topic,timestamp,labeler_id,confidence
+36570,"""1""","""Raffle Promotion""",20250114000000,mistral,1.0
+36571,"""1""","""Raffle Promotion""",20250114000824,mistral,1.0
+36572,"""1""","""Raffle Promotion""",20250114001752,mistral,1.0
+36573,"""1""","""Raffle Promotion""",20250114003835,mistral,1.0
+36574,"""2""","""Wheel of Fortune Game""",20250114013026,mistral,1.0
+36575,"""2""","""Wheel of Fortune Game""",20250114022238,mistral,1.0
+36576,"""2""","""Wheel of Fortune Game""",20250114023026,mistral,1.0
+36577,"""3""","""Raffle Promotion""",20250114023054,mistral,1.0
+36578,"""3""","""Raffle Promotion""",20250114023745,mistral,1.0
+36579,"""4""","""Crypto Investment""",20250114024509,mistral,1.0
+36580,"""4""","""Crypto Investment""",20250114025211,mistral,1.0
+36581,"""4""","""Crypto Investment""",20250114030230,mistral,1.0
+36582,"""5""","""Raffle Promotion""",20250114031005,mistral,1.0
+36583,"""5""","""Raffle Promotion""",20250114032321,mistral,1.0
+36584,"""6""","""New Token Release""",20250114032945,mistral,1.0
+36585,"""6""","""New Token Release""",20250114033753,mistral,1.0
+36586,"""6""","""New Token Release""",20250114034244,mistral,1.0
+36587,"""7""","""Raffle Promotion""",20250114034907,mistral,1.0
+36588,"""7""","""Raffle Promotion""",20250114035856,mistral,1.0
+36589,"""8""","""Crypto Investment""",20250114040505,mistral,1.0
+36590,"""8""","""Crypto Investment""",20250114041217,mistral,1.0
+36591,"""8""","""Crypto Investment""",20250114042003,mistral,1.0
+36592,"""9""","""New Token Release""",20250114042749,mistral,1.0
+36593,"""9""","""New Token Release""",20250114043608,mistral,1.0
+36594,"""9""","""New Token Release""",20250114044149,mistral,1.0
+36595,"""10""","""Raffle Promotion""",20250114044834,mistral,1.0
+36596,"""10""","""Raffle Promotion""",20250114045728,mistral,1.0
+36597,"""11""","""Wheel of Fortune Game""",20250114050512,mistral,1.0
+36598,"""11""","""Wheel of Fortune Game""",20250114051706,mistral,1.0
+36599,"""11""","""Wheel of Fortune Game""",20250114052548,mistral,1.0
+36600,"""12""","""Raffle Promotion""",20250114053335,mistral,1.0
+36601,"""12""","""Raffle Promotion""",20250114054648,mistral,1.0
+36602,"""13""","""Crypto Investment""",20250114055321,mistral,1.0
+36603,"""13""","""Crypto Investment""",20250114060328,mistral,1.0
+36604,"""13""","""Crypto Investment""",20250114061159,mistral,1.0
+36605,"""14""","""New Token Release""",20250114061953,mistral,1.0
+36606,"""14""","""New Token Release""",20250114062918,mistral,1.0
+36607,"""14""","""New Token Release""",20250114063504,mistral,1.0
+36608,"""15""","""Raffle Promotion""",20250114064247,mistral,1.0
+36609,"""15""","""Raffle Promotion""",20250114065735,mistral,1.0
+36610,"""16""","""Wheel of Fortune Game""",20250114070400,mistral,1.0
+36611,"""16""","""Wheel of Fortune Game""",20250114071843,mistral,1.0
+36612,"""16""","""Wheel of Fortune Game""",20250114072911,mistral,1.0
+36613,"""17""","""Raffle Promotion""",20250114073628,mistral,1.0
+36614,"""17""","""Raffle Promotion""",20250114074709,mistral,1.0
+36615,"""18""","""Crypto Investment""",20250114075405,mistral,1.0
+36616,"""18""","""Crypto Investment""",20250114080322,mistral,1.0
+36617,"""18""","""Crypto Investment""",20250114081114,mistral,1.0
+36618,"""19""","""New Token Release""",20250114081959,mistral,1.0
+36619,"""19""","""New Token Release""",20250114082937,mistral,1.0
+36620,"""19""","""New Token Release""",20250114083519,mistral,1.0
+36621,"""1a""","""Raffle Promotion""",20250114084247,mistral,1.0
+36622,"""1a""","""Raffle Promotion""",20250114085735,mistral,1.0
+36623,"""1b""","""Wheel of Fortune Game""",20250114090400,mistral,1.0
+36624,"""1b""","""Wheel of Fortune Game""",20250114091843,mistral,1.0
+36625,"""1b""","""Wheel of Fortune Game""",20250114092911,mistral,1.0
+36626,"""1c""","""Raffle Promotion""",20250114093628,mistral,1.0
+36627,"""1c""","""Raffle Promotion""",20250114094709,mistral,1.0
+36628,"""1d""","""Crypto Investment""",20250114095405,mistral,1.0
+36629,"""1d""","""Crypto Investment""",20250114100322,mistral,1.0
+36630,"""1d""","""Crypto Investment""",20250114101114,mistral,1.0
+36631,"""1e""","""New Token Release""",20250114101959,mistral,1.0
+36632,"""1e""","""New Token Release""",20250114102937,mistral,1.0
+36633,"""1e""","""New Token Release""",20250114103519,mistral,1.0
+36634,"""1f""","""Raffle Promotion""",20250114104247,mistral,1.0
+36635,"""1f""","""Raffle Promotion""",20250114105735,mistral,1.0
+36636,"""1g""","""Wheel of Fortune Game""",20250114110400,mistral,1.0
+36637,"""1g""","""Wheel of Fortune Game""",20250114111843,mistral,1.0
+36638,"""1g""","""Wheel of Fortune Game""",20250114112911,mistral,1.0
+36639,"""1h""","""Raffle Promotion""",20250114113628,mistral,1.0
+36640,"""1h""","""Raffle Promotion""",20250114114709,mistral,1.0
+36641,"""1i""","""Crypto Investment""",20250114115405,mistral,1.0
+36642,"""1i""","""Crypto Investment""",20250114120322,mistral,1.0
+36643,"""1i""","""Crypto Investment""",20250114121114,mistral,1.0
+36644,"""1j""","""New Token Release""",20250114121959,mistral,1.0
+36645,"""1j""","""New Token Release""",20250114122937,mistral,1.0
+36646,"""1j""","""New Token Release""",20250114123519,mistral,1.0
+36647,"""1k""","""Raffle Promotion""",20250114124247,mistral,1.0
+36648,"""1k""","""Raffle Promotion""",20250114125735,mistral,1.0
+36649,"""1l""","""Wheel of Fortune Game""",20250114130400,mistral,1.0
+36650,"""1l""","""Wheel of Fortune Game""",20250114131843,mistral,1.0
+36651,"""1l""","""Wheel of Fortune Game""",20250114132911,mistral,1.0
+36652,"""1m""","""Raffle Promotion""",20250114133628,mistral,1.0
+36653,"""1m""","""Raffle Promotion""",20250114134709,mistral,1.0
+36654,"""1n""","""Crypto Investment""",20250114135405,mistral,1.0
+36655,"""1n""","""Crypto Investment""",20250114140322,mistral,1.0
+36656,"""1n""","""Crypto Investment""",20250114141114,mistral,1.0
+36657,"""1o""","""New Token Release""",20250114141959,mistral,1.0
+36658,"""1o""","""New Token Release""",20250114142937,mistral,1.0
+36659,"""1o""","""New Token Release""",20250114143519,mistral,1.0
+36660,"""1p""","""Raffle Promotion""",20250114144247,mistral,1.0
+36661,"""1p""","""Raffle Promotion""",20250114145735,mistral,1.0
+36662,"""1q""","""Wheel of Fortune Game""",20250114150400,mistral,1.0
+36663,"""1q""","""Wheel of Fortune Game""",20250114151843,mistral,1.0
+36664,"""1q""","""Wheel of Fortune Game""",20250114152911,mistral,1.0
+36665,"""1r""","""Raffle Promotion""",20250114153628,mistral,1.0
+36666,"""1r""","""Raffle Promotion""",20250114154709,mistral,1.0
+36667,"""1s""","""Crypto Investment""",20250114155405,mistral,1.0
+36668,"""1s""","""Crypto Investment""",20250114160322,mistral,1.0
+36669,"""1s""","""Crypto Investment""",20250114161114,mistral,1.0
+36670,"""1t""","""New Token Release""",20250114161959,mistral,1.0
+36671,"""1t""","""New Token Release""",20250114162937,mistral,1.0
+36672,"""1t""","""New Token Release""",20250114163519,mistral,1.0
+36673,"""1u""","""Raffle Promotion""",20250114164247,mistral,1.0
+36674,"""1u""","""Raffle Promotion""",20250114165735,mistral,1.0
+36675,"""1u""","""Raffle Promotion""",20250114170722,mistral,1.0
+36676,"""1v""","""Wheel of Fortune Game""",20250114171400,mistral,1.0
+36677,"""1v""","""Wheel of Fortune Game""",20250114172843,mistral,1.0
+36678,"""1v""","""Wheel of Fortune Game""",20250114174311,mistral,1.0
+36679,"""1w""","""Raffle Promotion""",20250114175934,mistral,1.0
+36680,"""1w""","""Raffle Promotion""",20250114181400,mistral,1.0
+36681,"""1w""","""Raffle Promotion""",20250114182843,mistral,1.0
+36682,"""1x""","""Wheel of Fortune Game""",20250114184311,mistral,1.0
+36683,"""1x""","""Wheel of Fortune Game""",20250114190722,mistral,1.0
+36684,"""1x""","""Wheel of Fortune Game""",20250114193134,mistral,1.0
+36685,"""1y""","""Raffle Promotion""",20250114195757,mistral,1.0
+36686,"""1y""","""Raffle Promotion""",20250114201222,mistral,1.0
+36687,"""1y""","""Raffle Promotion""",20250114202757,mistral,1.0
+36688,"""1z""","""Wheel of Fortune Game""",20250114204311,mistral,1.0
+36689,"""1z""","""Wheel of Fortune Game""",20250114205822,mistral,1.0
+36690,"""1z""","""Wheel of Fortune Game""",20250114211257,mistral,1.0
+36691,"""1{""","""Raffle Promotion""",20250114213358,mistral,1.0
+36692,"""1{""","""Raffle Promotion""",20250114214822,mistral,1.0
+36693,"""1{""","""Raffle Promotion""",20250114216358,mistral,1.0
+36578,1,"""TONSPIN Airdrop Announcement""",20250114051733,mistral,1.0
+36580,2,"""PAWS Festival and Token Giveaway""",20250114064659,mistral,1.0
+36582,2,"""Confirming Bull Run""",20250114092102,mistral,1.0
+36583,2,"""Froshray""",20250114093558,mistral,1.0
+36587,3,"""Announcement Expectation for Today""",20250114094036,mistral,1.0
+36588,3,"""Desire for Announcement before Q1 ends""",20250114094206,mistral,1.0
+36589,3,"""Possibility of Update from Bren""",20250114100349,mistral,1.0
+36590,4,"""Hello""",20250114101101,mistral,1.0
+36592,5,"""XRP Memecoin PHNIX and UFD Pump""",20250114112840,mistral,1.0
+36597,6,"""Developer Services Offered""",20250114132545,mistral,1.0
+36599,1,"""Short days""",20250114133347,mistral,1.0
+36600,1,"""NSYE opening for effect""",20250114133527,mistral,1.0
+36602,2,"""Greetings""",20250114142650,mistral,1.0
+36603,2,"""Already passed by""",20250114143019,mistral,1.0
+36611,2,"""Missed update?""",20250114181900,mistral,1.0
+36613,2,"""Update in 30min""",20250114182725,mistral,1.0
+0,0,"""Spam Messages""",20250227181035,mistral,1.0
+36604,3,"""Air drop event""",20250227181035,mistral,1.0
+36605,3,"""Claim tokens now""",20250227181035,mistral,1.0
+36606,3,"""Simple and fast""",20250227181035,mistral,1.0
+36607,3,"""Exclusive event with Notosin""",20250227181035,mistral,1.0
+36608,4,"""Air drop event""",20250227181035,mistral,1.0
+36609,4,"""Claim tokens now""",20250227181035,mistral,1.0
+36610,4,"""Simple and fast""",20250227181035,mistral,1.0
+36612,4,"""Exclusive event with Notosin""",20250227181035,mistral,1.0
+"""36615""","""1""","""Project Completion & Partnerships""",20250114183454,mistral,1.0
+"""36616""","""1""","""Recovering Gas Fees""",20250114184909,mistral,1.0
+"""36617""","""1""","""Recovering Gas Fees""",20250114184913,mistral,1.0
+"""36618""","""1""","""Recovering Gas Fees""",20250114184915,mistral,1.0
+"""36619""","""1""","""Recovering Gas Fees""",20250114184917,mistral,1.0
+"""36620""","""2""","""Cere Network Testnet Integration Update""",20250114185127,mistral,1.0
+"""36621""","""2""","""Cere Network Mainnet Launch Timeline""",20250114185127,mistral,1.0
+"""36623""","""3""","""KekiusMaxximus Coin Announcement""",20250114185657,mistral,1.0
+"""36626""","""4""","""Moderator Position Inquiry""",20250114212347,mistral,1.0
+"""36627""","""5""","""Ethereum Coin Making Automation Tool Promotion""",20250114220201,mistral,1.0
+"""36629""","""1""","""Airdrop Promotion""",20250114184200,mistral,1.0
+"""36630""","""1""","""Request for Whitelist""",20250114184330,mistral,1.0
+"""36631""","""1""","""Airdrop Claim""",20250114193744,mistral,1.0
+"""36632""","""1""","""Inquiry about AMA date and location""",20250114200436,mistral,1.0
+"""36633""","""2""","""Spam Messages""",20250114202708,mistral,1.0
+"""36634""","""3""","""Giveaway Participation""",20250115000202,mistral,1.0
+"""36635""","""3""","""Giveaway Participation""",20250115000744,mistral,1.0
+"""36636""","""4""","""Business Proposal""",20250115013410,mistral,1.0
+"""36637""","""5""","""Feedback on Cere""",20250115013548,mistral,1.0
+"""36638""","""5""","""Expectations for Cere""",20250115043148,mistral,1.0
+"""36639""","""6""","""Business Proposal""",20250115043230,mistral,1.0
+"""36640""","""6""","""Feedback on Cere""",20250115043604,mistral,1.0
+"""36641""","""7""","""Promotion for Smart Bot""",20250115060900,mistral,1.0
+"""36644""","""1""","""Defending Price Strategy""",20250115072601,mistral,1.0
+"""36646""","""1""","""Volume and Price Discussion""",20250115074713,mistral,1.0
+"""36647""","""1""","""Bot Detection and Inactivity""",20250115081634,mistral,1.0
+"""36648""","""2""","""New Topic Initiation""",20250115081658,mistral,1.0
+"""36652""","""1""","""Follow-up on Previous Conversation""",20250115113850,mistral,1.0
+"""36653""","""1""","""Confirmation of Answer""",20250115114231,mistral,1.0
+"""36654""","""1""","""Acknowledgement""",20250115114319,mistral,1.0
+"""36655""","""3""","""General Expression""",20250115123855,mistral,1.0
+"""36656""","""1""","""Follow-up on Answer""",20250115131546,mistral,1.0
+"""36657""","""1""","""Answer to Follow-up""",20250115133251,mistral,1.0
+"""36658""","""1""","""Doubts and skepticism among old holders of some asset/project""",20250115133905,mistral,1.0
+"""36659""","""1""","""Reaction to the previous message expressing doubts""",20250115134140,mistral,1.0
+"""36660""","""2""","""Reminiscing past experiences and acknowledging OG members""",20250115134343,mistral,1.0
+"""36661""","""2""","""Continuation of the previous message""",20250115134354,mistral,1.0
+"""36662""","""2""","""Identifying an OG member in the community""",20250115134428,mistral,1.0
+"""36663""","""3""","""Joining due to a specific user's presence""",20250115135737,mistral,1.0
+"""36664""","""3""","""Confirmation of joining the community due to the same user's presence""",20250115135911,mistral,1.0
