@@ -14,8 +14,8 @@
 
 # Model Configuration
 model:
-  name: "phi4"  # The model to use (must be pulled via ollama first!)
-  temperature: 0.7
+  name: "mistral"  # The model to use (must be pulled via ollama first!)
+  temperature: 0.3
   max_tokens: 1000
   top_p: 0.9
 
