@@ -1,0 +1,30 @@
+CONVERSATION_DETECTION_PROMPT = """Your task is to analyze the following message data and identify distinct conversations and their topics. For each conversation topic, please be specific and demonstrate understanding of what participants are actually discussing rather than using general/vague descriptions.
+
+Below you will find a series of messages with their IDs, timestamps, and content:
+
+[MESSAGES]
+
+Please analyze these messages and return your analysis in .txt format with the following columns:
+message_id,conversation_id,topic,timestamp,labeler_id,confidence
+
+Rules for analysis:
+1. For spam messages: assign conv_id = 0 and topic = "Spam Messages"
+2. For all other messages: assign conversation IDs in ascending order (1, 2, 3, etc.) based on when each distinct conversation starts chronologically
+3. **Conversation Grouping**: 
+   - Group messages into conversations based on their **semantic similarity, shared keywords, and chronological order**.
+   - Messages from different users within **a short time window (e.g., 5-10 minutes)** are likely part of the same conversation.
+   - **Consider response chains** (e.g., if a message replies to another, keep them in the same conversation).
+4. Each message must be assigned to exactly one conversation
+5.  **Topic Classification**:
+   - Assign each conversation a **meaningful and specific topic**, based on the **main subject of discussion**.
+   - Example topics: "Billing Issues", "Technical Support", "Product Inquiry", "Feature Request", "Bug Report".
+   - Use **consistent terminology** for similar conversations.
+6. Every message ID from the input must be included in the output
+7. Timestamps should be preserved exactly as they appear in the input
+8. **Confidence Calculation**:
+   - Confidence should be **higher (closer to 1.0) if multiple features align**, e.g., similar keywords, intent, and timestamp proximity.
+   - If a message fits into **multiple possible topics**, assign a **lower confidence (e.g., 0.5-0.7)**.
+   - If a message **clearly belongs** to a topic, assign a confidence **above 0.9**.
+9. The confidence value should reflect your certainty about the conversation assignment (0.0-1.0)
+
+Return only the .txt data starting with the header row. Do not include any explanations or additional text.""" 
