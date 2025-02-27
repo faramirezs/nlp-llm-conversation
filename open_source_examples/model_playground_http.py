@@ -1,10 +1,10 @@
 """
-Mistral 7B implementation using Ollama for conversation detection.
+Models playground implementation using Ollama for conversation detection.
 This serves as a starter example for implementing open-source models.
 
 Requirements:
 - Ollama installed (https://ollama.ai)
-- Mistral 7B model pulled (`ollama pull mistral`)
+- model pulled from Ollama
 """
 
 import os
@@ -28,8 +28,8 @@ logger = logging.getLogger(__name__)
 # Constants
 OLLAMA_DEFAULT_PORT = 11434
 OLLAMA_BASE_URL = f"http://localhost:{os.environ.get('OLLAMA_PORT', OLLAMA_DEFAULT_PORT)}"
-MODEL_NAME = "mistral"
-MODEL_ID = "mistral7b"  # ID used in output filenames
+MODEL_NAME = "phi4"
+MODEL_ID = "phi4"  # ID used in output filenames
 BATCH_SIZE = 25  # Process messages in smaller batches due to context window limitations
 
 def generate_output_filename(input_file: str) -> str:
@@ -68,11 +68,11 @@ class Label:
 
 class MistralConversationDetector:
     """
-    Conversation detector using Mistral 7B through Ollama for message analysis and topic detection.
+    Conversation detector through Ollama for message analysis and topic detection.
     """
 
     def __init__(self, port=None):
-        """Initialize the Mistral detector."""
+        """Initialize detector."""
         self.model = MODEL_NAME
         self.labeler_id = MODEL_ID
         self.port = port or os.environ.get('OLLAMA_PORT', OLLAMA_DEFAULT_PORT)
@@ -167,7 +167,7 @@ class MistralConversationDetector:
         return all_labels
 
     def _detect_conversations(self, messages: List[Dict[str, Any]]) -> List[Label]:
-        """Implementation of conversation detection using Mistral."""
+        """Implementation of conversation detection using model."""
         try:
             prompt = self._create_analysis_prompt(messages)
 
@@ -263,7 +263,7 @@ No headers, no quotes, no additional text."""
                         conv_id = str(int(conv_id))  # Should be a valid integer
                         confidence = float(confidence)
 
-                        # Ensure labeler_id is always mistral7b
+                        # Ensure labeler_id is always model_id
                         if labeler_id.isdigit():
                             labeler_id = self.labeler_id
 
@@ -291,11 +291,11 @@ No headers, no quotes, no additional text."""
             return labels
 
         except Exception as e:
-            logger.error(f"Error in Mistral conversation detection: {str(e)}")
+            logger.error(f"Error in Model conversation detection: {str(e)}")
             raise
 
     def _create_analysis_prompt(self, messages: List[Dict[str, Any]]) -> str:
-        """Create the analysis prompt for Mistral."""
+        """Create the analysis prompt for Model."""
         # Load the conversation detection prompt template
         prompt_path = os.path.join(os.path.dirname(__file__), '..', 'conversation_detection_prompt.txt')
         with open(prompt_path, 'r') as f:
@@ -312,7 +312,7 @@ No headers, no quotes, no additional text."""
         return prompt_template.replace("[MESSAGES]", formatted_messages)
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Run Mistral conversation detection on a messages file')
+    parser = argparse.ArgumentParser(description='Run model conversation detection on a messages file')
     parser.add_argument('input_file', help='Path to input CSV file containing messages')
     parser.add_argument('--output', '-o', help='Path to output file (optional, will use standard naming convention if not provided)',
                       default=None)
