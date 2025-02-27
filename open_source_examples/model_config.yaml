@@ -21,7 +21,7 @@ model:
 
 # Prompt Configuration
 prompt:
-  path: "conversation_detection_prompt.txt"  # Path to the prompt file
+  path: "conversation_detection_prompt_ale1.txt"  # Path to the prompt file
 
 # Output Configuration
 output:
