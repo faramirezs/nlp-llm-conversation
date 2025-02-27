@@ -18,13 +18,14 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 class ModelLabeler:
-    def __init__(self, config_path: str):
+    def __init__(self, config_path: str, verbose: bool = False):
         """Initialize the labeler with configuration."""
         self.script_dir = os.path.dirname(os.path.abspath(__file__))
         self.config = self._load_config(config_path)
         self.client = Client()
         self.model_name = self.config['model']['name']
         self.prompt = self._load_prompt()
+        self.verbose = verbose
         
     def _load_config(self, config_path: str) -> Dict[str, Any]:
         """Load configuration from YAML file."""
@@ -212,6 +213,15 @@ class ModelLabeler:
             return output_path
         except Exception as e:
             logger.error(f"Failed to save results: {e}")
+            if self.verbose:
+                print("\nVerbose error output:")
+                print(f"Error type: {type(e).__name__}")
+                print(f"Error message: {str(e)}")
+                print(f"Attempted to save to: {output_path}")
+                print("\nResults that failed to save:")
+                for idx, result in enumerate(results):
+                    print(f"\nResult {idx + 1}:")
+                    print(json.dumps(result, indent=2))
             return None
 
     def generate_labels(self, input_file: str) -> str:
@@ -243,9 +253,10 @@ def main():
     parser = argparse.ArgumentParser(description="Generate conversation labels using LLMs")
     parser.add_argument("input_file", help="Path to the input messages CSV file")
     parser.add_argument("--config", default="model_config.yaml", help="Path to the configuration file")
+    parser.add_argument("--verbose", action="store_true", help="Enable verbose error output")
     args = parser.parse_args()
 
-    labeler = ModelLabeler(args.config)
+    labeler = ModelLabeler(args.config, verbose=args.verbose)
     labeler.generate_labels(args.input_file)
 
 if __name__ == "__main__":
