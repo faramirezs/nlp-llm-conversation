@@ -724,7 +724,7 @@ The project includes a model playground (`open_source_examples/model_playground.
 
 2. **Usage**:
    ```bash
-   python3 open_source_examples/model_playground.py data/groups/thisiscere/messages_thisiscere.csv --config open_source_examples/model_config.yaml
+   python3 open_source_examples/model_playground.py data/groups/thisiscere/messages_thisiscere.csv --config model_config.yaml
    ```
 
 3. **Customization**:
