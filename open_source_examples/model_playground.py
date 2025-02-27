@@ -8,6 +8,7 @@ import os
 import sys
 from datetime import datetime
 from typing import List, Dict, Any
+import subprocess
 
 import yaml
 from ollama import Client
@@ -18,13 +19,21 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 class ModelLabeler:
-    def __init__(self, config_path: str):
+    def __init__(self, config_path: str, verbose: bool = False):
         """Initialize the labeler with configuration."""
         self.script_dir = os.path.dirname(os.path.abspath(__file__))
         self.config = self._load_config(config_path)
+        self.gpu_id = self._select_gpu() if self.config.get('gpu', {}).get('enabled', False) else None
+        if self.gpu_id is not None:
+            os.environ['CUDA_VISIBLE_DEVICES'] = str(self.gpu_id)
+            logger.info(f"Using GPU {self.gpu_id}")
+        else:
+            logger.info("Using CPU for computation")
         self.client = Client()
         self.model_name = self.config['model']['name']
         self.prompt = self._load_prompt()
+
+        self.verbose = verbose
 
     def _load_config(self, config_path: str) -> Dict[str, Any]:
         """Load configuration from YAML file."""
@@ -51,6 +60,40 @@ class ModelLabeler:
         except Exception as e:
             logger.error(f"Failed to load prompt file: {e}")
             sys.exit(1)
+
+    def _select_gpu(self) -> int:
+        """Select the least utilized GPU."""
+        try:
+            # Run nvidia-smi to get GPU utilization
+            result = subprocess.run(['nvidia-smi', '--query-gpu=index,utilization.gpu,memory.used',
+                                   '--format=csv,noheader,nounits'],
+                                  capture_output=True, text=True, check=True)
+
+            # Parse the output
+            gpus = []
+            for line in result.stdout.strip().split('\n'):
+                idx, util, mem = map(float, line.split(','))
+                gpus.append({'index': int(idx), 'utilization': util, 'memory': mem})
+
+            if not gpus:
+                if self.config.get('gpu', {}).get('fallback_to_cpu', True):
+                    logger.warning("No GPUs found, falling back to CPU")
+                    return None
+                else:
+                    raise RuntimeError("No GPUs found and CPU fallback is disabled")
+
+            # Sort by utilization and memory usage
+            gpus.sort(key=lambda x: (x['utilization'], x['memory']))
+
+            # Return the index of the least utilized GPU
+            return gpus[0]['index']
+
+        except (subprocess.SubprocessError, ValueError) as e:
+            if self.config.get('gpu', {}).get('fallback_to_cpu', True):
+                logger.warning(f"Failed to query GPUs ({str(e)}), falling back to CPU")
+                return None
+            else:
+                raise RuntimeError(f"Failed to query GPUs: {str(e)}")
 
     def _read_messages(self, input_file: str) -> pd.DataFrame:
         """Read and preprocess input messages."""
@@ -97,6 +140,18 @@ class ModelLabeler:
             raw_content = response.message['content'].strip()
             logger.info(f"Raw model response:\n{raw_content}")
 
+            # Skip lines between <think> tags in the response
+            filtered_lines = []
+            skip = False
+            for line in raw_content.split('\n'):
+                if '<think>' in line:
+                    skip = True
+                if not skip:
+                    filtered_lines.append(line)
+                if '</think>' in line:
+                    skip = False
+            filtered_response = '\n'.join(filtered_lines)
+
             def standardize_column_name(col: str) -> str:
                 """Standardize column names to our expected format."""
                 col = col.strip().lower()
@@ -130,8 +185,8 @@ class ModelLabeler:
                 return datetime.now().strftime('%Y%m%d%H%M%S')
 
             try:
-                # Extract and clean CSV content
-                csv_content = extract_csv_content(raw_content)
+                # Extract and clean CSV content from filtered response
+                csv_content = extract_csv_content(filtered_response)
 
                 # Parse CSV content
                 lines = csv_content.strip().split('\n')
@@ -212,6 +267,15 @@ class ModelLabeler:
             return output_path
         except Exception as e:
             logger.error(f"Failed to save results: {e}")
+            if self.verbose:
+                print("\nVerbose error output:")
+                print(f"Error type: {type(e).__name__}")
+                print(f"Error message: {str(e)}")
+                print(f"Attempted to save to: {output_path}")
+                print("\nResults that failed to save:")
+                for idx, result in enumerate(results):
+                    print(f"\nResult {idx + 1}:")
+                    print(json.dumps(result, indent=2))
             return None
 
     def generate_labels(self, input_file: str) -> str:
@@ -243,9 +307,10 @@ def main():
     parser = argparse.ArgumentParser(description="Generate conversation labels using LLMs")
     parser.add_argument("input_file", help="Path to the input messages CSV file")
     parser.add_argument("--config", default="model_config.yaml", help="Path to the configuration file")
+    parser.add_argument("--verbose", action="store_true", help="Enable verbose error output")
     args = parser.parse_args()
 
-    labeler = ModelLabeler(args.config)
+    labeler = ModelLabeler(args.config, verbose=args.verbose)
     labeler.generate_labels(args.input_file)
 
 if __name__ == "__main__":

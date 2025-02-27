@@ -611,18 +611,16 @@ ollama pull phi
 ```yaml
 # Update the model configuration
 model:
-  name: "llama2"  # Change to your chosen model
-  temperature: 0.7  # Adjust temperature (higher = more creative, lower = more focused)
-  max_tokens: 1000  # Adjust based on your needs
-  top_p: 0.9  # Adjust sampling parameters
-
-# Other configurations (prompt, output, processing) can also be modified
+  name: "phi"  # Model name
+  temperature: 0.3  # Lower for more focused outputs
+  max_tokens: 1000  # Response length limit
+  top_p: 0.95  # Sampling parameter
 ```
 
 4. Run your experiment:
 ```bash
 # Use the general-purpose script with your config
-python model_playground.py data/groups/thisiscere/messages_thisiscere.csv --config open_source_examples/model_config.yaml
+python model_playground.py data/groups/thisiscere/messages_thisiscere.csv
 ```
 
 5. Compare results:
@@ -663,4 +661,94 @@ Remember: The goal is to improve upon the baseline Mistral 7B performance (ARI s
 
 # Step 5: Start understanding the modifying the prompts, pre-grouping techniques, models
 
-This is the advanced step where you'll start to understand how to modify the prompts, pre-grouping techniques, and models to improve the performance of the model.
+## Models Configuration
+
+The project uses a flexible model configuration system that allows you to easily experiment with different models and parameters. The configuration is managed through `open_source_examples/model_config.yaml`.
+
+### Key Components:
+
+1. **Model Settings**
+   - Choose from various Ollama models (e.g., Mistral, Phi-2, LLaMA 2, CodeLLama)
+   - Configure temperature, max tokens, and top_p parameters
+   - Example configuration:
+   ```yaml
+   model:
+     name: "phi"  # Model name
+     temperature: 0.3  # Lower for more focused outputs
+     max_tokens: 1000  # Response length limit
+     top_p: 0.95  # Sampling parameter
+   ```
+
+2. **Prompt Management**
+   - Prompts are stored in separate text files
+   - Easy to modify and experiment with different prompting strategies
+   - Configuration specifies the prompt file:
+   ```yaml
+   prompt:
+     path: "conversation_detection_prompt.txt"
+   ```
+
+3. **Output Configuration**
+   - Flexible output formatting (CSV, JSON)
+   - Configurable timestamp formats
+   - Confidence score inclusion options
+   ```yaml
+   output:
+     format: "csv"
+     include_confidence: true
+     timestamp_format: "%Y%m%d_%H%M%S"
+     output_dir: "data/groups"
+   ```
+
+4. **Processing Parameters**
+   - Batch size control for efficient processing
+   - Context window size configuration
+   - Confidence thresholds for filtering results
+   ```yaml
+   processing:
+     batch_size: 8
+     max_context_messages: 5
+     min_confidence_threshold: 0.7
+   ```
+
+## Model Playground
+
+The project includes a model playground (`open_source_examples/model_playground.py`) for experimenting with different models and configurations:
+
+1. **Key Features**:
+   - Interactive testing of different models
+   - Batch processing of messages
+   - Standardized output formatting
+   - Robust error handling and logging
+   - Easy integration with Ollama models
+
+2. **Usage**:
+   ```bash
+   python3 open_source_examples/model_playground.py data/groups/thisiscere/messages_thisiscere.csv --config model_config.yaml
+   ```
+
+3. **Customization**:
+   - Modify `model_config.yaml` to experiment with different models
+   - Adjust processing parameters for your use case
+   - Test different prompt strategies by modifying the prompt file
+
+## Modifying Prompts
+
+To experiment with different prompting strategies:
+
+1. **Locate the prompt file** specified in `model_config.yaml`
+2. **Modify the prompt** while maintaining the `[MESSAGES]` placeholder
+3. **Test the changes** using the model playground
+4. **Evaluate results** using the metrics scripts
+
+### Best Practices for Prompt Engineering:
+
+1. **Clear Instructions**: Ensure prompts are clear and specific
+2. **Consistent Format**: Maintain the expected output format (CSV structure)
+3. **Context Window**: Consider the model's context window limitations
+4. **Required Fields**: Always include message_id, conversation_id, topic, and timestamp
+5. **Error Handling**: Include guidance for edge cases and error conditions
+
+## Pre-grouping Techniques
+
+[This section will be updated in the future with information about pre-grouping techniques]
