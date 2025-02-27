@@ -8,6 +8,7 @@ import os
 import sys
 from datetime import datetime
 from typing import List, Dict, Any
+import subprocess
 
 import yaml
 from ollama import Client
@@ -22,6 +23,12 @@ class ModelLabeler:
         """Initialize the labeler with configuration."""
         self.script_dir = os.path.dirname(os.path.abspath(__file__))
         self.config = self._load_config(config_path)
+        self.gpu_id = self._select_gpu() if self.config.get('gpu', {}).get('enabled', False) else None
+        if self.gpu_id is not None:
+            os.environ['CUDA_VISIBLE_DEVICES'] = str(self.gpu_id)
+            logger.info(f"Using GPU {self.gpu_id}")
+        else:
+            logger.info("Using CPU for computation")
         self.client = Client()
         self.model_name = self.config['model']['name']
         self.prompt = self._load_prompt()
@@ -52,6 +59,40 @@ class ModelLabeler:
         except Exception as e:
             logger.error(f"Failed to load prompt file: {e}")
             sys.exit(1)
+
+    def _select_gpu(self) -> int:
+        """Select the least utilized GPU."""
+        try:
+            # Run nvidia-smi to get GPU utilization
+            result = subprocess.run(['nvidia-smi', '--query-gpu=index,utilization.gpu,memory.used',
+                                   '--format=csv,noheader,nounits'], 
+                                  capture_output=True, text=True, check=True)
+            
+            # Parse the output
+            gpus = []
+            for line in result.stdout.strip().split('\n'):
+                idx, util, mem = map(float, line.split(','))
+                gpus.append({'index': int(idx), 'utilization': util, 'memory': mem})
+            
+            if not gpus:
+                if self.config.get('gpu', {}).get('fallback_to_cpu', True):
+                    logger.warning("No GPUs found, falling back to CPU")
+                    return None
+                else:
+                    raise RuntimeError("No GPUs found and CPU fallback is disabled")
+            
+            # Sort by utilization and memory usage
+            gpus.sort(key=lambda x: (x['utilization'], x['memory']))
+            
+            # Return the index of the least utilized GPU
+            return gpus[0]['index']
+            
+        except (subprocess.SubprocessError, ValueError) as e:
+            if self.config.get('gpu', {}).get('fallback_to_cpu', True):
+                logger.warning(f"Failed to query GPUs ({str(e)}), falling back to CPU")
+                return None
+            else:
+                raise RuntimeError(f"Failed to query GPUs: {str(e)}")
 
     def _read_messages(self, input_file: str) -> pd.DataFrame:
         """Read and preprocess input messages."""

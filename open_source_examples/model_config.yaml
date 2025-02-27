@@ -14,7 +14,7 @@
 
 # Model Configuration
 model:
-  name: "mistral"  # The model to use (must be pulled via ollama first!)
+  name: "phi:latest"  # The model to use (must be pulled via ollama first!)
   temperature: 0.7
   max_tokens: 1000
   top_p: 0.9
@@ -34,4 +34,10 @@ output:
 processing:
   batch_size: 10  # Number of messages to process in each batch
   max_context_messages: 5  # Number of previous messages to include for context
-  min_confidence_threshold: 0.7  # Minimum confidence score to accept a prediction 
+  min_confidence_threshold: 0.7  # Minimum confidence score to accept a prediction
+
+# GPU Configuration
+gpu:
+  enabled: true  # Whether to use GPU acceleration
+  auto_select: true  # Automatically select least utilized GPU
+  fallback_to_cpu: true  # Fall back to CPU if no GPU is available 
