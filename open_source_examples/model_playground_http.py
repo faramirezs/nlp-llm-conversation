@@ -28,8 +28,8 @@ logger = logging.getLogger(__name__)
 # Constants
 OLLAMA_DEFAULT_PORT = 11434
 OLLAMA_BASE_URL = f"http://localhost:{os.environ.get('OLLAMA_PORT', OLLAMA_DEFAULT_PORT)}"
-MODEL_NAME = "phi4"
-MODEL_ID = "phi4"  # ID used in output filenames
+MODEL_NAME = "mistral"
+MODEL_ID = "mistral"  # ID used in output filenames
 BATCH_SIZE = 25  # Process messages in smaller batches due to context window limitations
 
 def generate_output_filename(input_file: str) -> str:
@@ -84,8 +84,7 @@ class MistralConversationDetector:
             response = requests.post(f"{self.base_url}/api/chat", json={
                 "model": self.model,
                 "messages": [{"role": "system", "content": "test"}]
-            }, timeout=10
-            )
+            })
 
             if response.status_code == 404:
                 # Try older API format
@@ -199,8 +198,7 @@ No headers, no quotes, no additional text."""
                         "options": {
                             "temperature": 0.3
                         }
-                    }, timeout=60
-                )
+                    })
             except:
                 # Fallback to older generate API
                 response = requests.post(
