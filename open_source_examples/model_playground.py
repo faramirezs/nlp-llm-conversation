@@ -24,14 +24,14 @@ class ModelLabeler:
         self.client = Client()
         self.model_name = self.config['model']['name']
         self.prompt = self._load_prompt()
-        
+
     def _load_config(self, config_path: str) -> Dict[str, Any]:
         """Load configuration from YAML file."""
         try:
             # If config_path is not absolute, make it relative to script directory
             if not os.path.isabs(config_path):
                 config_path = os.path.join(self.script_dir, config_path)
-            
+
             with open(config_path, 'r') as f:
                 return yaml.safe_load(f)
         except Exception as e:
@@ -68,12 +68,12 @@ class ModelLabeler:
         batch_size = self.config['processing']['batch_size']
         start_idx = batch_idx * batch_size
         batch = messages.iloc[start_idx:start_idx + batch_size]
-        
+
         formatted_messages = []
         for _, row in batch.iterrows():
             msg = f"ID: {row['id']}\nTimestamp: {row['timestamp']}\nUser: {row['username']}\nMessage: {row['text']}\n"
             formatted_messages.append(msg)
-        
+
         return "\n".join(formatted_messages)
 
     def _process_batch(self, messages: str) -> List[Dict[str, Any]]:
@@ -81,14 +81,14 @@ class ModelLabeler:
         try:
             # Replace [MESSAGES] placeholder in prompt with actual messages
             prompt_with_messages = self.prompt.replace('[MESSAGES]', messages)
-            
+
             response = self.client.chat(
                 model=self.model_name,
                 messages=[
                     {"role": "user", "content": prompt_with_messages}
                 ]
             )
-            
+
             # Parse CSV response into list of dictionaries
             try:
                 csv_lines = response.message['content'].strip().split('\n')
@@ -101,7 +101,7 @@ class ModelLabeler:
                 logger.error(f"Failed to parse response: {e}")
                 logger.error(f"Raw response: {response}")
                 return []
-            
+
         except Exception as e:
             logger.error(f"Failed to process batch: {e}")
             return []
@@ -111,10 +111,10 @@ class ModelLabeler:
         timestamp = datetime.now().strftime(self.config['output']['timestamp_format'])
         output_dir = os.path.join(self.config['output']['output_dir'], community_name)
         os.makedirs(output_dir, exist_ok=True)
-        
+
         output_filename = f"labels_{timestamp}_{self.model_name}_{community_name}.csv"
         output_path = os.path.join(output_dir, output_filename)
-        
+
         try:
             with open(output_path, 'w', newline='') as f:
                 writer = csv.DictWriter(f, fieldnames=['message_id', 'conversation_id', 'topic', 'timestamp', 'labeler_id', 'confidence'])
@@ -136,21 +136,21 @@ class ModelLabeler:
     def generate_labels(self, input_file: str) -> str:
         """Generate conversation labels for the input messages."""
         logger.info(f"Starting label generation with model: {self.model_name}")
-        
+
         # Extract community name from input path
         community_name = os.path.basename(os.path.dirname(input_file))
-        
+
         # Read and process messages
         messages_df = self._read_messages(input_file)
         total_batches = len(messages_df) // self.config['processing']['batch_size'] + 1
-        
+
         all_results = []
         for batch_idx in range(total_batches):
             logger.info(f"Processing batch {batch_idx + 1}/{total_batches}")
             batch_messages = self._prepare_message_batch(messages_df, batch_idx)
             batch_results = self._process_batch(batch_messages)
             all_results.extend(batch_results)
-        
+
         # Save results
         output_file = self._save_results(all_results, community_name)
         if output_file:
@@ -168,4 +168,4 @@ def main():
     labeler.generate_labels(args.input_file)
 
 if __name__ == "__main__":
-    main() 
+    main()
