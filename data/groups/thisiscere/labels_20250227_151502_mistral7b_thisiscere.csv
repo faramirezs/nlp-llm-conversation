@@ -1,0 +1,18 @@
+message_id,conversation_id,topic,timestamp,labeler_id,confidence
+36644,1,Discussion on price defense strategies,2025-01-15T07:26:01Z,mistral7b,1.0
+36646,1,Volume and price discussion,2025-01-15T07:47:13Z,mistral7b,1.0
+36647,1,Discussion on bot interaction,2025-01-15T08:16:34Z,mistral7b,1.0
+36648,2,New topic: Unspecified question,2025-01-15T08:16:58Z,mistral7b,0.9
+36652,1,Follow-up on price defense strategies,2025-01-15T11:38:50Z,mistral7b,1.0
+36653,1,Answer to question about team's strategies,2025-01-15T11:42:31Z,mistral7b,1.0
+36654,1,Confirmation of previous answer,2025-01-15T11:43:19Z,mistral7b,1.0
+36655,1,Discussion on skepticism and need for reassurance,2025-01-15T12:38:55Z,mistral7b,1.0
+36656,1,Request for further clarification,2025-01-15T13:32:51Z,mistral7b,1.0
+36657,1,Answer to request for further clarification,2025-01-15T13:39:05Z,mistral7b,1.0
+36658,1,Discussion on boosting old holders' confidence,2025-01-15T13:41:40Z,mistral7b,1.0
+36659,2,Skepticism towards previous answer,2025-01-15T13:43:43Z,mistral7b,0.9
+36660,3,Reminiscing about past experiences,2025-01-15T13:43:54Z,mistral7b,0.8
+36661,3,Agreement on being in the community for a long time,2025-01-15T13:44:28Z,mistral7b,0.9
+36662,3,Recognition of a long-time user,2025-01-15T13:57:37Z,mistral7b,0.9
+36663,4,Expression of gratitude,2025-01-15T13:59:11Z,mistral7b,0.8
+36664,4,Agreement on being there because of the long-time user,2025-01-15T13:59:11Z,mistral7b,0.9
