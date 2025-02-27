@@ -1,0 +1,33 @@
+message_id,conversation_id,topic,timestamp,labeler_id,confidence
+36598,0,Spam Messages,2025-01-14T10:00:00,mistral7b,1.0
+36597,1,General Discussion,2025-01-14T10:00:00,mistral7b,1.0
+36596,1,General Discussion,2025-01-14T10:00:00,mistral7b,1.0
+36595,2,Job Offer,2025-01-14T13:33:47,mistral7b,1.0
+36594,2,Job Offer,2025-01-14T13:30:19,mistral7b,1.0
+36593,3,Announcement,2025-01-14T14:26:50,mistral7b,1.0
+36592,3,Announcement,2025-01-14T14:30:19,mistral7b,1.0
+36591,4,General Discussion,2025-01-14T15:55:11,mistral7b,1.0
+36634,1,Giveaway Promotion,2025-01-15T00:00:00Z,mistral7b,0.95
+36635,1,Giveaway Promotion,2025-01-15T02:52:44Z,mistral7b,0.95
+36638,2,Technical Partnership Inquiry,2025-01-15T04:31:48Z,mistral7b,0.85
+36639,2,Technical Partnership Response,2025-01-15T04:32:30Z,mistral7b,0.95
+36640,2,,2025-01-15T04:36:04Z,mistral7b,0.85
+36641,3,Promotion of Smart Bot,2025-01-15T05:05:31Z,mistral7b,0.95
+36642,3,Response to Promotion,2025-01-15T06:09:00Z,mistral7b,0.95
+36644,1,Discussion on price defense strategies,2025-01-15T07:26:01Z,mistral7b,0.98
+36646,1,Reaction to previous message about volume and price,2025-01-15T07:47:13Z,mistral7b,0.9
+36647,1,Expression of dissatisfaction with conversation quality,2025-01-15T08:16:34Z,mistral7b,0.85
+36648,2,New topic initiation,2025-01-15T08:16:58Z,mistral7b,0.75
+36652,1,Request for attention to previous question,2025-01-15T11:38:50Z,mistral7b,0.95
+36653,1,Response to request for attention,2025-01-15T11:42:31Z,mistral7b,0.9
+36654,1,Acknowledgement of response,2025-01-15T11:43:19Z,mistral7b,0.98
+36655,0,Spam Messages,2025-01-15T12:38:55Z,mistral7b,1.0
+36656,1,Follow-up on previous question,2025-01-15T13:15:46Z,mistral7b,0.97
+36657,1,Answer to follow-up question,2025-01-15T13:32:51Z,mistral7b,0.99
+36658,1,Discussion on skepticism and need for reassurance,2025-01-15T13:41:40Z,mistral7b,0.9
+36659,1,Expression of disbelief,2025-01-15T13:43:43Z,mistral7b,0.8
+36660,3,Reminiscing about past experiences,2025-01-15T13:43:54Z,mistral7b,0.7
+36661,3,Acknowledgement of reminiscence,2025-01-15T13:43:54Z,mistral7b,0.9
+36662,3,Recognition of long-term community member,2025-01-15T13:44:28Z,mistral7b,0.85
+36663,3,Appreciation for long-term community member,2025-01-15T13:57:37Z,mistral7b,0.95
+36664,3,Affirmation of appreciation,2025-01-15T13:59:11Z,mistral7b,0.98

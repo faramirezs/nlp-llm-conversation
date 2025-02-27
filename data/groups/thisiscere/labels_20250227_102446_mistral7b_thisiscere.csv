@@ -1,0 +1,33 @@
+message_id,conversation_id,topic,timestamp,labeler_id,confidence
+36598,0,Spam Messages,2025-01-14T13:33:47Z,mistral7b,1.0
+36599,1,Announcement - X Token AirDrop Event,2025-01-14T13:35:27Z,mistral7b,1.0
+36600,1,Offer for Developer Services,2025-01-14T13:35:27Z,mistral7b,0.9
+36602,1,Discussion on NSYE opening,2025-01-14T14:26:50Z,mistral7b,1.0
+36603,2,Announcement - Empire Bot,2025-01-14T14:30:19Z,mistral7b,1.0
+36605,2,Instructions for X Token AirDrop,2025-01-14T15:55:11Z,mistral7b,1.0
+36635,1,Giveaway Promotion,2025-01-15T02:52:44Z,Labeler1,0.95
+36638,2,Partnership Inquiry,2025-01-15T04:31:48Z,Labeler1,0.95
+36639,2,Response to Partnership Inquiry,2025-01-15T04:32:30Z,Labeler1,0.95
+36640,2,Response to Partnership Inquiry (Email Address),2025-01-15T04:36:04Z,Labeler1,0.95
+36641,3,Anticipation for Upcoming Announcement,2025-01-15T05:05:31Z,Labeler1,0.95
+36642,3,Response to Anticipation for Upcoming Announcement,2025-01-15T06:09:00Z,Labeler1,0.95
+36636,4,Spam Messages,2025-01-15T00:00:00Z,Labeler2,1.0
+36637,4,Spam Messages,2025-01-15T00:01:48Z,Labeler2,1.0
+36634,5,Spam Messages,2025-01-14T23:59:00Z,Labeler2,1.0
+36644,1,Discussion on price defense strategy,2025-01-15T07:26:01Z,mistral7b,0.98
+36646,1,Volume and price discussion,2025-01-15T07:47:13Z,mistral7b,0.95
+36647,1,Bot interaction recognition,2025-01-15T08:16:34Z,mistral7b,0.95
+36648,2,New topic - Unspecified question,2025-01-15T08:16:58Z,mistral7b,0.75
+36652,1,Request for response from specific users,2025-01-15T11:38:50Z,mistral7b,0.98
+36653,1,Response to request,2025-01-15T11:42:31Z,mistral7b,0.98
+36654,1,Confirmation of response,2025-01-15T11:43:19Z,mistral7b,0.98
+36655,1,Expression of concern and support,2025-01-15T12:38:55Z,mistral7b,0.95
+36656,1,Request for clarification on response,2025-01-15T13:15:46Z,mistral7b,0.98
+36657,1,Clarification of previous response,2025-01-15T13:32:51Z,mistral7b,0.98
+36658,1,Discussion on skepticism and need for reassurance,2025-01-15T13:41:40Z,mistral7b,0.95
+36659,2,Expression of disbelief,2025-01-15T13:43:43Z,mistral7b,0.85
+36660,3,Reminiscing about past experiences,2025-01-15T13:43:54Z,mistral7b,0.95
+36661,3,Agreement on reminiscence,2025-01-15T13:43:54Z,mistral7b,0.95
+36662,3,Recognition of long-time user,2025-01-15T13:44:28Z,mistral7b,0.95
+36663,4,Recognition and appreciation of user,2025-01-15T13:57:37Z,mistral7b,0.95
+36664,4,Agreement on recognition,2025-01-15T13:59:11Z,mistral7b,0.95

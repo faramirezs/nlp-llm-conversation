@@ -1,0 +1,486 @@
+message_id,conversation_id,topic,timestamp,labeler_id,confidence
+36605,1,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,2,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,3,Spam Messages,2025-01-14T14:30:19Z,phi4,1.0
+36602,4,Spam Messages,2025-01-14T14:26:50Z,phi4,1.0
+36600,5,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,6,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36602,7,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,8,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36599,9,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,10,Spam Messages,2025-01-14T14:30:19Z,phi4,1.0
+36605,11,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36600,12,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,13,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36605,14,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36603,15,Spam Messages,2025-01-14T14:30:19Z,phi4,1.0
+36602,16,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,17,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36600,18,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,19,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36597,20,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,21,Spam Messages,2025-01-14T14:30:19Z,phi4,1.0
+36602,22,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,23,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36600,24,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,25,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36597,26,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,27,Spam Messages,2025-01-14T14:30:19Z,phi4,1.0
+36602,28,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,29,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36600,30,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,31,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36597,32,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,33,Spam Messages,2025-01-14T14:30:19Z,phi4,1.0
+36602,34,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,35,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36600,36,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,37,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36597,38,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,39,Spam Messages,2025-01-14T14:30:19Z,phi4,1.0
+36602,40,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,41,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36600,42,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,43,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36597,44,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,45,Spam Messages,2025-01-14T14:30:19Z,phi4,1.0
+36602,46,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,47,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36600,48,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,49,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36597,50,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,51,Spam Messages,2025-01-14T14:30:19Z,phi4,1.0
+36602,52,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,53,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36600,54,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,55,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36597,56,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,57,Spam Messages,2025-01-14T14:30:19Z,phi4,1.0
+36602,58,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,59,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36600,60,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,61,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36597,62,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,63,Spam Messages,2025-01-14T14:30:19Z,phi4,1.0
+36602,64,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,65,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36600,66,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,67,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36597,68,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,69,Spam Messages,2025-01-14T14:30:19Z,phi4,1.0
+36602,70,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36597,71,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,72,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,73,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,74,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,75,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,76,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36599,77,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,78,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,79,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,80,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36600,81,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,82,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36597,83,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,84,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,85,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36599,86,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,87,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,88,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,89,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36600,90,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,91,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,92,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36605,93,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,94,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36600,95,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,96,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,97,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,98,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,99,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,100,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,101,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,102,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,103,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,104,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,105,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,106,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,107,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,108,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,109,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,110,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,111,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,112,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36597,113,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,114,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36599,115,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,116,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,117,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36605,118,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,119,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36600,120,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,121,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,122,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,123,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,124,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,125,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,126,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,127,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,128,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,129,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,130,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,131,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,132,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,133,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,134,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,135,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,136,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,137,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,138,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,139,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,140,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,141,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,142,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,143,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,144,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,145,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,146,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,147,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,148,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,149,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,150,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,151,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,152,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,153,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,154,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,155,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,156,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,157,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,158,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,159,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,160,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,161,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,162,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,163,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,164,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,165,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,166,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,167,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,168,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,169,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,170,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,171,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,172,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,173,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,174,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,175,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,176,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,177,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,178,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,179,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,180,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,181,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,182,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,183,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,184,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,185,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,186,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,187,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,188,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,189,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,190,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,191,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,192,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,193,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,194,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,195,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,196,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,197,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,198,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,199,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,200,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,201,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,202,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,203,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,204,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,205,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,206,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,207,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,208,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,209,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,210,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,211,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,212,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,213,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,214,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,215,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,216,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,217,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,218,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,219,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,220,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,221,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,222,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,223,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,224,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,225,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,226,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,227,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,228,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,229,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,230,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,231,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,232,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,233,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,234,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,235,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,236,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,237,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,238,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,239,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,240,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,241,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,242,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,243,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,244,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,245,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,246,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,247,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,248,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,249,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,250,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,251,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,252,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,253,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,254,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,255,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,256,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,257,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,258,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,259,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,260,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,261,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,262,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,263,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,264,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,265,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,266,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,267,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,268,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,269,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,270,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,271,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,272,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,273,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,274,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,275,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,276,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,277,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,278,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,279,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,280,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,281,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,282,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,283,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,284,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,285,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,286,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,287,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,288,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,289,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,290,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,291,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,292,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,293,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,294,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,295,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,296,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,297,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,298,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,299,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,300,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,301,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,302,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,303,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,304,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,305,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,306,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,307,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,308,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,309,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,310,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,311,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,312,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,313,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,314,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,315,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,316,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,317,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,318,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,319,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,320,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,321,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,322,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,323,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,324,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,325,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,326,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,327,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,328,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,329,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,330,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,331,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,332,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,333,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,334,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,335,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,336,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,337,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,338,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,339,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,340,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,341,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,342,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,343,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,344,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,345,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,346,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,347,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,348,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,349,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,350,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,351,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,352,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,353,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,354,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,355,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,356,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,357,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,358,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,359,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,360,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,361,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,362,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,363,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,364,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,365,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,366,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,367,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,368,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,369,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,370,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,371,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,372,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,373,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,374,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,375,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,376,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,377,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,378,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,379,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,380,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,381,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,382,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,383,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,384,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,385,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,386,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,387,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,388,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,389,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,390,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,391,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,392,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,393,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,394,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,395,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,396,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,397,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,398,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,399,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,400,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,401,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,402,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,403,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,404,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,405,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,406,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,407,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,408,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,409,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,410,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,411,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,412,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,413,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,414,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,415,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,416,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,417,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,418,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,419,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,420,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,421,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,422,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,423,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,424,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,425,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,426,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,427,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,428,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,429,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,430,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,431,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,432,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,433,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,434,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,435,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,436,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,437,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,438,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,439,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,440,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,441,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36599,442,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36603,443,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36600,444,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36597,445,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36603,446,General Greeting,2025-01-14T14:26:50Z,phi4,1.0
+36599,447,Spam Messages,2025-01-14T13:33:47Z,phi4,1.0
+36597,448,Cryptocurrency Development Opportunities,2025-01-14T13:25:45Z,phi4,0.8
+36600,449,Stock Market and Trading,2025-01-14T13:35:27Z,phi4,0.9
+36605,450,Spam Messages,2025-01-14T15:55:11Z,phi4,1.0
+36630,1,Cere Network Mainnet Launch,2023-12-29T00:00:00Z,labeler_1,0.9
+36631,2,Technical Partnership Inquiry,2023-12-29T00:00:01Z,labeler_1,0.8
+36632,3,Cere Network Mainnet Launch,2023-12-29T00:00:02Z,labeler_1,0.9
+36633,4,Spam Messages,2023-12-29T00:00:03Z,labeler_1,1.0
+36634,5,Mainnet Launch and Testnet Migration,2023-12-29T00:00:04Z,labeler_1,0.9
+36635,6,Cere Network Mainnet Launch,2023-12-29T00:00:05Z,labeler_1,0.9
+36636,7,Spam Messages,2023-12-29T00:00:06Z,labeler_1,1.0
+36637,8,Mainnet Launch and Testnet Migration,2023-12-29T00:00:07Z,labeler_1,0.9
+36638,2,Technical Partnership Inquiry,2023-01-15T04:31:48Z,labeler_1,0.8
+36639,2,Technical Partnership Inquiry,2023-01-15T04:32:30Z,labeler_1,0.8
+36640,9,Cere Network Expectations,2023-01-15T04:36:04Z,labeler_1,0.7
+36641,9,Cere Network Expectations,2023-01-15T05:05:31Z,labeler_1,0.7
+36642,10,Spam Messages,2023-01-15T06:09:00Z,labeler_1,1.0
+36643,11,Spam Messages,2023-01-15T00:00:08Z,labeler_1,1.0
+36644,12,Spam Messages,2023-01-15T00:00:09Z,labeler_1,1.0
+36645,13,Spam Messages,2023-01-15T00:00:10Z,labeler_1,1.0
+36646,14,Spam Messages,2023-01-15T00:00:11Z,labeler_1,1.0
+36647,15,Spam Messages,2023-01-15T00:00:12Z,labeler_1,1.0
+36644,1,Price Defense Strategy,2025-01-15T07:26:01Z,phi4,0.9
+36646,2,Market Conditions,2025-01-15T07:47:13Z,phi4,0.8
+36647,3,Bot Interaction,2025-01-15T08:16:34Z,phi4,0.7
+36648,4,General Inquiry,2025-01-15T08:16:58Z,phi4,0.6
+36652,1,Price Defense Strategy,2025-01-15T11:38:50Z,phi4,0.9
+36653,1,Price Defense Strategy,2025-01-15T11:42:31Z,phi4,0.9
+36654,1,Price Defense Strategy,2025-01-15T11:43:19Z,phi4,0.9
+36655,3,Bot Interaction,2025-01-15T12:38:55Z,phi4,0.7
+36656,1,Price Defense Strategy,2025-01-15T13:15:46Z,phi4,0.9
+36657,1,Price Defense Strategy,2025-01-15T13:32:51Z,phi4,0.9
+36658,1,Price Defense Strategy,2025-01-15T13:39:05Z,phi4,0.9
+36659,5,Skepticism and Belief,2025-01-15T13:41:40Z,phi4,0.8
+36660,6,Covid Reflections,2025-01-15T13:43:43Z,phi4,0.85
+36661,6,Covid Reflections,2025-01-15T13:43:54Z,phi4,0.85
+36662,6,Covid Reflections,2025-01-15T13:44:28Z,phi4,0.85
+36663,7,Motivation for Presence,2025-01-15T13:57:37Z,phi4,0.8
+36664,5,Skepticism and Belief,2025-01-15T13:59:11Z,phi4,0.8
