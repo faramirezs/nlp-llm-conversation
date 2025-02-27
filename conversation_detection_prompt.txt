@@ -15,4 +15,4 @@ Rules for analysis:
 5. Timestamps should be preserved exactly as they appear in the input
 6. The confidence value should reflect your certainty about the conversation assignment (0.0-1.0)
 
-Return only the CSV data starting with the header row. Do not include any explanations or additional text.""" 
+Return only the CSV data starting with the header row. Do not put any quotes. Do not include any explanations or additional text."""
