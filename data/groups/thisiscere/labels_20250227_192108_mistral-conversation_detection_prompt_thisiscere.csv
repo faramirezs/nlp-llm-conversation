@@ -1,0 +1,131 @@
+message_id,conversation_id,topic,timestamp,labeler_id,confidence
+36570,"""1""","""$XTONX Promotion""",20250114013026,mistral,1.0
+36571,"""1""","""$XTONX Promotion""",20250114013031,mistral,1.0
+36572,"""1""","""$XTONX Promotion""",20250114013042,mistral,1.0
+36573,"""1""","""Rewards Claim Reminder""",20250114013108,mistral,1.0
+36574,"""2""","""Rewards Claim Reminder""",20250114013223,mistral,1.0
+36569,"""0""","""Spam Messages""",20250114012857,mistral,1.0
+36575,"""3""","""Flashing Arrows Game""",20250114022238,mistral,1.0
+36576,"""3""","""Flashing Arrows Game""",20250114023026,mistral,1.0
+36568,"""0""","""Spam Messages""",20250114012739,mistral,1.0
+36577,"""2""","""Rewards Claim Reminder""",20250114013201,mistral,1.0
+36578,"""2""","""Rewards Claim Reminder""",20250114013229,mistral,1.0
+36579,"""2""","""Rewards Claim Reminder""",20250114013238,mistral,1.0
+36567,"""0""","""Spam Messages""",20250114012703,mistral,1.0
+36566,"""0""","""Spam Messages""",20250114012658,mistral,1.0
+36565,"""0""","""Spam Messages""",20250114012651,mistral,1.0
+36564,"""0""","""Spam Messages""",20250114012647,mistral,1.0
+36563,"""0""","""Spam Messages""",20250114012643,mistral,1.0
+36573,"""1""","""Rewards Claim Reminder""",20250114013108,mistral,1.0
+36561,"""0""","""Spam Messages""",20250114012617,mistral,1.0
+36562,"""0""","""Spam Messages""",20250114012621,mistral,1.0
+36560,"""0""","""Spam Messages""",20250114012608,mistral,1.0
+36571,"""1""","""$XTONX Promotion""",20250114013031,mistral,1.0
+36572,"""1""","""$XTONX Promotion""",20250114013042,mistral,1.0
+36573,"""1""","""Rewards Claim Reminder""",20250114013108,mistral,1.0
+36574,"""2""","""Rewards Claim Reminder""",20250114013223,mistral,1.0
+36569,"""0""","""Spam Messages""",20250114012857,mistral,1.0
+36575,"""3""","""Flashing Arrows Game""",20250114022238,mistral,1.0
+36576,"""3""","""Flashing Arrows Game""",20250114023026,mistral,1.0
+36568,"""0""","""Spam Messages""",20250114012739,mistral,1.0
+36577,"""2""","""Rewards Claim Reminder""",20250114013201,mistral,1.0
+36578,"""2""","""Rewards Claim Reminder""",20250114013229,mistral,1.0
+36579,"""2""","""Rewards Claim Reminder""",20250114013238,mistral,1.0
+36567,"""0""","""Spam Messages""",20250114012703,mistral,1.0
+36566,"""0""","""Spam Messages""",20250114012658,mistral,1.0
+36565,"""0""","""Spam Messages""",20250114012651,mistral,1.0
+36564,"""0""","""Spam Messages""",20250114012647,mistral,1.0
+36563,"""0""","""Spam Messages""",20250114012643,mistral,1.0
+36573,"""1""","""Rewards Claim Reminder""",20250114013108,mistral,1.0
+36561,"""0""","""Spam Messages""",20250114012617,mistral,1.0
+36562,"""0""","""Spam Messages""",20250114012621,mistral,1.0
+36560,"""0""","""Spam Messages""",20250114012608,mistral,1.0
+36571,"""1""","""$XTONX Promotion""",20250114013031,mistral,1.0
+36572,"""1""","""$XTONX Promotion""",20250114013042,mistral,1.0
+36573,"""1""","""Rewards Claim Reminder""",20250114013108,mistral,1.0
+36569,"""0""","""Spam Messages""",20250114012857,mistral,1.0
+36575,"""3""","""Flashing Arrows Game""",20250114022238,mistral,1.0
+36576,"""3""","""Flashing Arrows Game""",20250114023026,mistral,1.0
+36568,"""0""","""Spam Messages""",20250114012739,mistral,1.0
+36577,"""2""","""Rewards Claim Reminder""",20250114013201,mistral,1.0
+36578,"""2""","""Rewards Claim Reminder""",20250114013229,mistral,1.0
+36579,"""2""","""Rewards Claim Reminder""",20250114013238,mistral,1.0
+36567,"""0""","""Spam Messages""",20250114012703,mistral,1.0
+36566,"""0""","""Spam Messages""",20250114012658,mistral,1.0
+36565,"""0""","""Spam Messages""",20250114012651,mistral,1.0
+36564,"""0""","""Spam Messages""",20250114012647,mistral,1.0
+36563,"""0""","""Spam Messages""",20250114012643,mistral,1.0
+36573,"""1""","""Rewards Claim Reminder""",20250114013108,mistral,1.0
+36561,"""0""","""Spam Messages""",20250114012617,mistral,1.0
+36562,"""0""","""Spam Messages""",20250114012621,mistral,1.0
+36560,"""0""","""Spam Messages""",20250114012608,mistral,1.0
+36571,"""1""","""$XTONX Promotion""",20250114013031,mistral,1.0
+36572,"""1""","""$XTONX Promotion""",20250114013042,mistral,1.0
+36573,"""1""","""Rewards Claim Reminder""",20250114013108,mistral,1.0
+36569,"""0""","""Spam Messages""",20250114012857,mistral,1.0
+36575,"""3""","""Flashing Arrows Game""",20250114022238,mistral,1.0
+36576,"""3""","""Flashing Arrows Game""",20250114023026,mistral,1.0
+36568,"""0""","""Spam Messages""",20250114012739,mistral,1.0
+36577,"""2""","""Rewards Claim Reminder""",20250114013201,mistral,1.0
+36578,"""2""","""Rewards Claim Reminder""",20250114013229,mistral,1.0
+36579,"""2""","""Rewards Claim Reminder""",20250114013238,mistral,1.0
+36567,"""0""","""Spam Messages""",20250114012703,mistral,1.0
+36566,"""0""","""Spam Messages""",20250114012658,mistral,1.0
+36565,"""0""","""Spam Messages""",20250114012651,mistral,1.0
+36564,"""0""","""Spam Messages""",20250114012647,mistral,1.0
+36563,"""0""","""Spam Messages""",20250114012643,mistral,1.0
+36578,0,"""Spam Messages""",20250114051733,mistral,1.0
+36580,1,"""PAWS Festival Giveaway""",20250114064659,mistral,1.0
+36582,1,"""Confirm Bull run""",20250114092102,mistral,1.0
+36583,1,"""Froshray""",20250114093558,mistral,1.0
+36587,1,"""Announcement Confirmation""",20250114094036,mistral,1.0
+36588,1,"""Anticipation for Announcement""",20250114094206,mistral,1.0
+36589,1,"""Hope for Update from Bren""",20250114100349,mistral,1.0
+36590,1,"""Chat""",20250114101101,mistral,1.0
+36592,2,"""Coin Price Analysis""",20250114112840,mistral,1.0
+36597,2,"""Development Opportunities""",20250114132545,mistral,1.0
+36599,1,Short Days,20250114133347,mistral,1.0
+36600,1,Stock Market Discussion,20250114133527,mistral,1.0
+36602,2,New Participant Introduction,20250114142650,mistral,1.0
+36603,1,Offer Declination,20250114143019,mistral,1.0
+36611,1,Update Inquiry,20250114181900,mistral,1.0
+36613,1,Update on Delayed Post,20250114182725,mistral,1.0
+36604,3,Airdrop Event 1,20250114150903,mistral,1.0
+36605,3,Airdrop Event 1 Details,20250114151304,mistral,1.0
+36606,3,Questions about Airdrop Event 1,20250114151829,mistral,1.0
+36610,3,Airdrop Event 1 Clarification,20250114173436,mistral,1.0
+36612,4,Airdrop Event 2 Announcement,20250114181229,mistral,1.0
+"""36615""","""1""","""Project Progress and Partnerships""",20250114183454,mistral,1.0
+"""36616""","""1""","""Gas Reimbursement Site""",20250114184909,mistral,1.0
+"""36617""","""1""","""Gas Reimbursement Site""",20250114184913,mistral,1.0
+"""36618""","""1""","""Gas Reimbursement Site""",20250114184915,mistral,1.0
+"""36619""","""1""","""Gas Reimbursement Site""",20250114184917,mistral,1.0
+"""36620""","""2""","""Cere Network Testnet Integration Update""",20250114185127,mistral,1.0
+"""36621""","""2""","""Cere Network Mainnet Launch Timeline""",20250114185127,mistral,1.0
+"""36623""","""3""","""KekiusMaxximus Coin Promotion""",20250114185657,mistral,1.0
+"""36626""","""4""","""Moderator Role Inquiry""",20250114212347,mistral,1.0
+"""36627""","""5""","""Cryptocurrency Automation Tool Promotion""",20250114220201,mistral,1.0
+36635,"""0""","""Spam Messages""",20250115025244,mistral,1.0
+36636,"""0""","""Spam Messages""",20250115025618,mistral,1.0
+36637,"""1""",Giveaway Participation,20250115031614,mistral,1.0
+36638,"""1""",Giveaway Participation,20250115043148,mistral,1.0
+36640,"""2""","""Positive Sentiment""",20250115043604,mistral,1.0
+36641,"""2""","""Promotion""",20250115050531,mistral,1.0
+36642,"""2""","""Positive Sentiment""",20250115060900,mistral,1.0
+"""36644""","""1""","""Defending price from falling""",20250115072601,mistral,1.0
+"""36646""","""1""","""Volume and price analysis""",20250115074713,mistral,1.0
+"""36647""","""1""","""Idle conversation""",20250115081634,mistral,1.0
+"""36648""","""1""","""New topic initiation""",20250115081658,mistral,1.0
+"""36652""","""2""","""Request for team response""",20250115113850,mistral,1.0
+"""36653""","""2""","""Team confirmation""",20250115114231,mistral,1.0
+"""36654""","""2""","""Acknowledgement""",20250115114319,mistral,1.0
+"""36655""","""3""","""Expressing concern""",20250115123855,mistral,1.0
+"""36656""","""3""","""Follow-up request for response""",20250115131546,mistral,1.0
+"""36657""","""3""","""Response to follow-up request""",20250115133251,mistral,1.0
+"""36658""","""1""","""Discussing crypto skepticism and old holders boost""",20250115133905,mistral,1.0
+"""36659""","""1""","""Response to previous message""",20250115134140,mistral,1.0
+"""36660""","""2""","""Reminiscing about past experiences during Covid-19 pandemic""",20250115134343,mistral,1.0
+"""36661""","""2""","""Continuation of the reminiscence about the past""",20250115134354,mistral,1.0
+"""36662""","""2""","""Mentioning Protocol920 as an old member""",20250115134428,mistral,1.0
+"""36663""","""3""","""Referring to the initial conversation starter""",20250115135737,mistral,1.0
+"""36664""","""3""","""Confirmation of being there due to the initial conversation starter""",20250115135911,mistral,1.0
