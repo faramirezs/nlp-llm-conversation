@@ -1,0 +1,266 @@
+#!/usr/bin/env python3
+
+import argparse
+import csv
+import json
+import logging
+import os
+import sys
+from datetime import datetime
+from typing import List, Dict, Any
+
+import yaml
+from ollama import Client
+import pandas as pd
+import re
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
+class ModelLabeler:
+    def __init__(self, config_path: str):
+        """Initialize the labeler with configuration."""
+        self.script_dir = os.path.dirname(os.path.abspath(__file__))
+        self.config = self._load_config(config_path)
+        self.client = Client()
+        self.model_name = self.config['model']['name']
+        self.prompt = self._load_prompt()
+        # Extract additional configuration parameters
+        self.temperature = self.config['model']['temperature']
+        self.max_tokens = self.config['model']['max_tokens']
+        self.top_p = self.config['model']['top_p']
+        self.batch_size = self.config['processing']['batch_size']
+        self.max_context_messages = self.config['processing']['max_context_messages']
+        self.min_confidence_threshold = self.config['processing']['min_confidence_threshold']
+
+    def _load_config(self, config_path: str) -> Dict[str, Any]:
+        """Load configuration from YAML file."""
+        try:
+            # If config_path is not absolute, make it relative to script directory
+            if not os.path.isabs(config_path):
+                config_path = os.path.join(self.script_dir, config_path)
+
+            with open(config_path, 'r') as f:
+                return yaml.safe_load(f)
+        except Exception as e:
+            logger.error(f"Failed to load config file: {e}")
+            sys.exit(1)
+
+    def _load_prompt(self) -> str:
+        """Load the conversation detection prompt from file."""
+        try:
+            # Make prompt path relative to workspace root
+            prompt_path = os.path.join(os.path.dirname(self.script_dir), self.config['prompt']['path'])
+            with open(prompt_path, 'r') as f:
+                content = f.read()
+                # Extract the prompt string from the Python file
+                return content.split('"""')[1].strip()
+        except Exception as e:
+            logger.error(f"Failed to load prompt file: {e}")
+            sys.exit(1)
+
+    def _read_messages(self, input_file: str) -> pd.DataFrame:
+        """Read and preprocess input messages."""
+        try:
+            df = pd.read_csv(input_file)
+            required_columns = ['id', 'text', 'timestamp', 'username']
+            if not all(col in df.columns for col in required_columns):
+                raise ValueError(f"Input file must contain columns: {required_columns}")
+            return df
+        except Exception as e:
+            logger.error(f"Failed to read input file: {e}")
+            sys.exit(1)
+
+    def _prepare_message_batch(self, messages: pd.DataFrame, batch_idx: int) -> str:
+        """Prepare a batch of messages for the model."""
+        batch_size = self.config['processing']['batch_size']
+        start_idx = batch_idx * batch_size
+        batch = messages.iloc[start_idx:start_idx + batch_size]
+
+        formatted_messages = []
+        for _, row in batch.iterrows():
+            msg = f"ID: {row['id']}\nTimestamp: {row['timestamp']}\nUser: {row['username']}\nMessage: {row['text']}\n"
+            formatted_messages.append(msg)
+
+        return "\n".join(formatted_messages)
+
+    def _process_batch(self, messages: str) -> List[Dict[str, Any]]:
+        """Process a batch of messages using the configured model."""
+        try:
+            # Replace [MESSAGES] placeholder in prompt with actual messages
+            prompt_with_messages = self.prompt.replace('[MESSAGES]', messages)
+
+            # Log the prompt being sent to the model
+            logger.debug(f"Sending prompt to model:\n{prompt_with_messages}")
+
+            response = self.client.chat(
+                model=self.model_name,
+                messages=[
+                    {"role": "user", "content": prompt_with_messages}
+                ]
+            )
+
+            # Log raw response for debugging
+            raw_content = response.message['content'].strip()
+            logger.info(f"Raw model response:\n{raw_content}")
+
+            def standardize_column_name(col: str) -> str:
+                """Standardize column names to our expected format."""
+                col = col.strip().lower()
+                if col in ['user_id', 'user']:
+                    return 'message_id'
+                if col in ['conv_id', 'conversation']:
+                    return 'conversation_id'
+                return col
+
+            def extract_csv_content(text: str) -> str:
+                """Extract CSV content from text, removing markdown and extra content."""
+                # Remove markdown code blocks
+                text = re.sub(r'```csv\s*|\s*```', '', text)
+
+                # Find CSV-like content (header row followed by data)
+                csv_pattern = r'([a-zA-Z_]+,\s*[a-zA-Z_]+.*?\n.*?)(?:\n\n|$)'
+                csv_match = re.search(csv_pattern, text, re.DOTALL)
+                if csv_match:
+                    return csv_match.group(1)
+                return text
+
+            def standardize_timestamp(timestamp: str) -> str:
+                """Standardize timestamp format."""
+                if not timestamp:
+                    return datetime.now().strftime('%Y%m%d%H%M%S')
+                # Remove any non-alphanumeric characters
+                clean_ts = re.sub(r'[^0-9]', '', timestamp)
+                # Ensure it's a valid timestamp string
+                if len(clean_ts) >= 14:  # YYYYMMDDHHmmss
+                    return clean_ts[:14]
+                return datetime.now().strftime('%Y%m%d%H%M%S')
+
+            try:
+                # Extract and clean CSV content
+                csv_content = extract_csv_content(raw_content)
+
+                # Parse CSV content
+                lines = csv_content.strip().split('\n')
+                if not lines:
+                    raise ValueError("No content found")
+
+                # Get and standardize headers
+                headers = [standardize_column_name(col) for col in lines[0].split(',')]
+                required_fields = {'message_id', 'conversation_id', 'topic', 'timestamp'}
+
+                # Check if we have all required fields
+                if not all(field in headers for field in required_fields):
+                    raise ValueError(f"Missing required fields. Found: {headers}")
+
+                results = []
+                for line in lines[1:]:
+                    if not line.strip() or line.startswith('<'):  # Skip empty lines and XML-like tags
+                        continue
+
+                    # Split line and pad with empty strings if needed
+                    values = [v.strip() for v in line.split(',')]
+                    values.extend([''] * (len(headers) - len(values)))  # Pad with empty strings
+
+                    row = {}
+                    for header, value in zip(headers, values):
+                        if header in required_fields:
+                            row[header] = value
+
+                    # Ensure required fields exist and standardize timestamp
+                    if all(field in row for field in required_fields):
+                        row['timestamp'] = standardize_timestamp(row['timestamp'])
+                        results.append(row)
+
+                if results:
+                    logger.info(f"Successfully parsed {len(results)} results")
+                    return results
+
+                logger.error("No valid results found after parsing")
+                return []
+
+            except Exception as e:
+                logger.error(f"Failed to parse response: {e}")
+                logger.error(f"Raw response: {raw_content}")
+                return []
+
+        except Exception as e:
+            logger.error(f"Failed to process batch: {e}")
+            return []
+
+    def _save_results(self, results: List[Dict[str, Any]], community_name: str) -> str:
+        """Save results to a CSV file in the community's data folder."""
+        timestamp = datetime.now().strftime(self.config['output']['timestamp_format'])
+        output_dir = os.path.join(self.config['output']['output_dir'], community_name)
+        os.makedirs(output_dir, exist_ok=True)
+
+        # Extract prompt filename without extension
+        prompt_filename = os.path.splitext(os.path.basename(self.config['prompt']['path']))[0]
+
+        # Combine model name with prompt filename using hyphen delimiter
+        model_identifier = f"{self.model_name}-{prompt_filename}"
+
+        output_filename = f"labels_{timestamp}_{model_identifier}_{community_name}.csv"
+        output_path = os.path.join(output_dir, output_filename)
+
+        try:
+            with open(output_path, 'w', newline='') as f:
+                writer = csv.DictWriter(f, fieldnames=['message_id', 'conversation_id', 'topic', 'timestamp', 'labeler_id', 'confidence',
+                'temperature', 'max_tokens', 'top_p', 'batch_size', 'max_context_messages', 'min_confidence_threshold'])
+                writer.writeheader()
+                for result in results:
+                    writer.writerow({
+                        'message_id': result['message_id'],
+                        'conversation_id': result['conversation_id'],
+                        'topic': result['topic'],
+                        'timestamp': result['timestamp'],
+                        'labeler_id': self.model_name,
+                        'confidence': result.get('confidence', 1.0),
+                        'temperature': self.temperature,
+                        'max_tokens': self.max_tokens,
+                        'top_p': self.top_p,
+                        'batch_size': self.batch_size,
+                        'max_context_messages': self.max_context_messages,
+                        'min_confidence_threshold': self.min_confidence_threshold
+                    })
+            return output_path
+        except Exception as e:
+            logger.error(f"Failed to save results: {e}")
+            return None
+
+    def generate_labels(self, input_file: str) -> str:
+        """Generate conversation labels for the input messages."""
+        logger.info(f"Starting label generation with model: {self.model_name}")
+
+        # Extract community name from input path
+        community_name = os.path.basename(os.path.dirname(input_file))
+
+        # Read and process messages
+        messages_df = self._read_messages(input_file)
+        total_batches = len(messages_df) // self.config['processing']['batch_size'] + 1
+
+        all_results = []
+        for batch_idx in range(total_batches):
+            logger.info(f"Processing batch {batch_idx + 1}/{total_batches}")
+            batch_messages = self._prepare_message_batch(messages_df, batch_idx)
+            batch_results = self._process_batch(batch_messages)
+            all_results.extend(batch_results)
+
+        # Save results
+        output_file = self._save_results(all_results, community_name)
+        if output_file:
+            logger.info(f"Labels generated and saved to: {output_file}")
+            logger.info(f"To evaluate results, run: python conversation_metrics.py data/groups/{community_name}")
+        return output_file
+
+def main():
+    parser = argparse.ArgumentParser(description="Generate conversation labels using LLMs")
+    parser.add_argument("input_file", help="Path to the input messages CSV file")
+    parser.add_argument("--config", default="model_config.yaml", help="Path to the configuration file")
+    args = parser.parse_args()
+
+    labeler = ModelLabeler(args.config)
+    labeler.generate_labels(args.input_file)
+
+if __name__ == "__main__":
+    main()
