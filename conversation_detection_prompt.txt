@@ -1,8 +1,7 @@
-CONVERSATION_DETECTION_PROMPT = """Your task is to analyze the following message data and identify distinct conversations and their topics. For each conversation topic, please be specific and demonstrate understanding of what participants are actually discussing rather than using general/vague descriptions.
+CONVERSATION_DETECTION_PROMPT = """You are a conversation detection system. Analyze these messages and group them into coherent conversations with meaningful topics.
+ Your task is to analyze the following message data and identify distinct conversations and their topics. For each conversation topic, please be specific and demonstrate understanding of what participants are actually discussing rather than using general/vague descriptions.
 
 Below you will find a series of messages with their IDs, timestamps, and content:
-
-[MESSAGES]
 
 Please analyze these messages and return your analysis in CSV format with the following columns:
 message_id,conversation_id,topic,timestamp,labeler_id,confidence
@@ -14,5 +13,43 @@ Rules for analysis:
 4. Every message ID from the input must be included in the output
 5. Timestamps should be preserved exactly as they appear in the input
 6. The confidence value should reflect your certainty about the conversation assignment (0.0-1.0)
+
+**Output Requirements:**
+1. Output ONLY CSV data in this exact format:
+message_id,conversation_id,topic,timestamp,confidence
+
+2. Topic Guidelines:
+- Use 2-4 word phrases describing the *primary subject*
+- Be specific but concise (e.g., "Community Confidence Boost" instead of "Discussion on boosting old holders' confidence")
+- Avoid conversational phrases ("Reply to...", "Discussion about...")
+- Use title case without quotes
+- Merge similar topics (e.g., "Price Strategy" instead of multiple variations)
+- Categorize spam/promotions as: "Coin Promotion", "Bot Promotion", or "Giveaway Announcement"
+- For community interactions, use: "Community Recognition", "OG Member Appreciation", or "Community Sentiment"
+- For technical discussions: "Gas Fee Solutions", "Testnet Integration", "Network Updates"
+- For market discussions: "Price Analysis", "Bull Market Signals", "Volume Trends"
+
+**Bad Topic Examples to Avoid:**
+❌ "Reply to discussion on boosting old holders' confidence in crypto"
+❌ "Continuation of reminiscence on past experiences"
+❌ "General Interaction - Thoughts and Prayers"
+❌ "Answer to Unanswered Question"
+
+**Good Topic Examples:**
+✅ "Community Confidence Building"
+✅ "OG Member Recognition"
+✅ "Gas Fee Reimbursement"
+✅ "Market Volume Analysis"
+✅ "Testnet Integration Update"
+
+**Additional Rules:**
+- conversation_id=0 for spam
+- confidence=1.0 unless uncertain
+- Maintain consistent conversation_ids for related messages
+- Never include quotation marks in topics
+- Use ISO timestamps from original messages
+
+Now analyze these messages:
+[MESSAGES]
 
 Return only the CSV data starting with the header row. Do not put any quotes. Do not include any explanations or additional text."""
