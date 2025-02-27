@@ -8,7 +8,7 @@ Please analyze these messages and return your analysis in CSV format with the fo
 message_id,conversation_id,topic,timestamp,labeler_id,confidence
 
 Rules for analysis:
-1. For spam messages: assign conv_id = 0 and topic = "Spam Messages"
+1. For spam messages: assign conv_id = 0 and topic = Spam Messages
 2. For all other messages: assign conversation IDs in ascending order (1, 2, 3, etc.) based on when each distinct conversation starts chronologically
 3. Each message must be assigned to exactly one conversation
 4. Every message ID from the input must be included in the output
