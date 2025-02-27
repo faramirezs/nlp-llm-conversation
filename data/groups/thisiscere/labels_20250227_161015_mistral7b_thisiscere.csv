@@ -1,0 +1,31 @@
+message_id,conversation_id,topic,timestamp,labeler_id,confidence
+36598,0,Spam Messages,2021-07-14 14:26:50,mistral7b,1.0
+36599,1,AirDrop Event Announcement,2021-07-14 13:33:47,mistral7b,0.98
+36600,1,NSYE Opening,2021-07-14 13:35:27,mistral7b,0.95
+36602,1,Empire Announcement,2021-07-14 14:26:50,mistral7b,0.98
+36603,1,AirDrop Event Instructions,2021-07-14 14:30:19,mistral7b,0.97
+36605,1,Empire AirDrop,2021-07-14 15:55:11,mistral7b,0.98
+36634,0,Airdrop Scam,2025-01-15T00:00:00Z,mistral7b,0.99
+36635,1,Giveaway,2025-01-15T00:00:44Z,mistral7b,0.85
+36636,1,Airdrop Scam,2025-01-15T00:01:07Z,mistral7b,0.99
+36637,1,Giveaway,2025-01-15T00:01:48Z,mistral7b,0.85
+36638,2,Business Inquiry,2025-01-15T04:31:48Z,mistral7b,0.98
+36639,2,Business Inquiry Response,2025-01-15T04:32:30Z,mistral7b,0.99
+36640,2,Expectation,2025-01-15T04:36:04Z,mistral7b,0.98
+36641,3,Promotion,2025-01-15T06:09:00Z,mistral7b,0.85
+36644,1,Discussion on price defense strategy,2025-01-15T07:26:01Z,mistral7b,0.98
+36646,1,Volume and price discussion,2025-01-15T07:47:13Z,mistral7b,0.95
+36647,1,General dissatisfaction with conversation,2025-01-15T08:16:34Z,mistral7b,0.85
+36648,2,New topic introduction,2025-01-15T08:16:58Z,mistral7b,0.9
+36652,1,Request for confirmation on previous question,2025-01-15T11:38:50Z,mistral7b,0.9
+36653,1,Confirmation of previous question,2025-01-15T11:42:31Z,mistral7b,0.99
+36654,1,Acknowledgement of confirmation,2025-01-15T11:43:19Z,mistral7b,0.98
+36655,1,Expression of skepticism about the answer,2025-01-15T12:38:55Z,mistral7b,0.9
+36656,1,Request for further clarification on the answer,2025-01-15T13:15:46Z,mistral7b,0.99
+36657,1,Clarification of previous question,2025-01-15T13:32:51Z,mistral7b,0.98
+36658,1,Discussion on boosting old holders' confidence,2025-01-15T13:41:40Z,mistral7b,0.95
+36659,2,Expression of disbelief about the answer,2025-01-15T13:43:43Z,mistral7b,0.85
+36660,3,Recollection of past experiences,2025-01-15T13:43:54Z,mistral7b,0.9
+36661,3,Referencing the longevity of a user,2025-01-15T13:43:54Z,mistral7b,0.9
+36662,3,Expression of gratitude towards a user,2025-01-15T13:57:37Z,mistral7b,0.85
+36663,3,Agreement with the expression of gratitude,2025-01-15T13:59:11Z,mistral7b,0.9
