@@ -97,6 +97,18 @@ class ModelLabeler:
             # Log raw response for debugging
             raw_content = response.message['content'].strip()
             logger.info(f"Raw model response:\n{raw_content}")
+
+            # Skip lines between <think> tags in the response
+            filtered_lines = []
+            skip = False
+            for line in raw_content.split('\n'):
+                if '<think>' in line:
+                    skip = True
+                if not skip:
+                    filtered_lines.append(line)
+                if '</think>' in line:
+                    skip = False
+            filtered_response = '\n'.join(filtered_lines)
             
             def standardize_column_name(col: str) -> str:
                 """Standardize column names to our expected format."""
@@ -131,8 +143,8 @@ class ModelLabeler:
                 return datetime.now().strftime('%Y%m%d%H%M%S')
             
             try:
-                # Extract and clean CSV content
-                csv_content = extract_csv_content(raw_content)
+                # Extract and clean CSV content from filtered response
+                csv_content = extract_csv_content(filtered_response)
                 
                 # Parse CSV content
                 lines = csv_content.strip().split('\n')
