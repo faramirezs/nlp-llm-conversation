@@ -1,3 +1,4 @@
+CONVERSATION_DETECTION_PROMPT =
 ```markdown
 You are tasked with analyzing a set of message data to identify distinct conversations and their respective topics. For each conversation, provide a detailed understanding of the discussion topics instead of using vague or general descriptions.
 
