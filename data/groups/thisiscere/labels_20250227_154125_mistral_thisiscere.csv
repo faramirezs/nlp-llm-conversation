@@ -1,0 +1,41 @@
+message_id,conversation_id,topic,timestamp,labeler_id,confidence
+36615,1,Project Status and Partnerships,2025-01-14T18:34:54Z,mistral,1.0
+36616,1,Reimbursement for gas fees,2025-01-14T18:49:09Z,mistral,1.0
+36617,1,GasFees .net,2025-01-14T18:49:13Z,mistral,1.0
+36618,1,Reimbursement for multi-chain fees,2025-01-14T18:49:15Z,mistral,1.0
+36619,1,Confirmation of reimbursement,2025-01-14T18:49:17Z,mistral,1.0
+36620,2,Cere Network x Hyperbridge Integration Update,2025-01-14T18:51:27Z,mistral,1.0
+36621,2,Announcements later this month,2025-01-14T18:53:43Z,mistral,1.0
+36623,3,UPC0MlNG Token and KekiussBO0K coin,2025-01-14T18:56:57Z,mistral,1.0
+36626,4,Moderator Open Role,2025-01-14T21:23:47Z,mistral,1.0
+36627,5,Automated ETH coin earning method,2025-01-14T22:02:01Z,mistral,1.0
+36630,0,Spam Messages,2025-01-14T15:02:29Z,mistral,1.0
+36631,0,Spam Messages,2025-01-14T15:08:00Z,mistral,1.0
+36632,1,Giveaway Participation,2025-01-14T15:09:23Z,mistral,1.0
+36633,1,Giveaway Participation,2025-01-14T15:18:37Z,mistral,1.0
+36634,2,Business Inquiry,2025-01-15T00:00:00Z,mistral,1.0
+36635,2,Business Inquiry,2025-01-15T00:52:44Z,mistral,1.0
+36636,3,Giveaway Participation,2025-01-15T01:57:19Z,mistral,1.0
+36637,3,Giveaway Participation,2025-01-15T02:48:04Z,mistral,1.0
+36638,4,Excitement/Expectations,2025-01-15T04:31:48Z,mistral,1.0
+36639,4,Excitement/Expectations,2025-01-15T04:32:30Z,mistral,1.0
+36640,5,Feedback,2025-01-15T04:36:04Z,mistral,1.0
+36641,5,Feedback,2025-01-15T06:09:00Z,mistral,1.0
+36642,5,Feedback,2025-01-15T06:09:00Z,mistral,1.0
+36644,1,Defending Price Strategy,2025-01-15T07:26:01Z,mistral,1.0
+36646,1,Volume and Price Analysis,2025-01-15T07:47:13Z,mistral,1.0
+36647,1,Unclear Topic,2025-01-15T08:16:34Z,mistral,0.5
+36648,1,Unclear Topic,2025-01-15T08:16:58Z,mistral,0.5
+36652,2,Request for Participants,2025-01-15T11:38:50Z,mistral,1.0
+36653,2,Response to Request,2025-01-15T11:42:31Z,mistral,1.0
+36654,2,Confirmation,2025-01-15T11:43:19Z,mistral,1.0
+36655,3,Spam Messages,2025-01-15T12:38:55Z,mistral,1.0
+36656,4,Follow-up on Request,2025-01-15T13:15:46Z,mistral,1.0
+36657,4,Answer to Follow-up,2025-01-15T13:32:51Z,mistral,1.0
+36658,1,Old Holders' Skepticism,2025-01-15T13:39:05Z,mistral,1.0
+36659,1,Confirmation of Previous Message,2025-01-15T13:41:40Z,mistral,1.0
+36660,2,Reminiscing About Previous Experiences,2025-01-15T13:43:43Z,mistral,1.0
+36661,2,Time Passage Remarks,2025-01-15T13:43:54Z,mistral,1.0
+36662,2,Recognition of OG User Protocol920,2025-01-15T13:44:28Z,mistral,1.0
+36663,1,Affirmation of Respect for Original User,2025-01-15T13:57:37Z,mistral,1.0
+36664,1,Confirmation of Previous Message,2025-01-15T13:59:11Z,mistral,1.0

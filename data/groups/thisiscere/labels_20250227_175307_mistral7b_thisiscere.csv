@@ -1,0 +1,18 @@
+message_id,conversation_id,topic,timestamp,labeler_id,confidence
+36644,1,Discussion on price defense strategy,2025-01-15T07:26:01Z,mistral7b,0.98
+36646,1,Volume and price discussion,2025-01-15T07:47:13Z,mistral7b,0.95
+36647,1,Bot interaction recognition,2025-01-15T08:16:34Z,mistral7b,0.9
+36648,2,New topic introduction,2025-01-15T08:16:58Z,mistral7b,0.85
+36652,1,Request for team response,2025-01-15T11:38:50Z,mistral7b,0.97
+36653,1,Team response confirmation,2025-01-15T11:42:31Z,mistral7b,0.99
+36654,1,Confirmation of team response,2025-01-15T11:43:19Z,mistral7b,0.98
+36655,3,Unrelated conversation,2025-01-15T12:38:55Z,mistral7b,0.7
+36656,1,Follow-up on team response,2025-01-15T13:15:46Z,mistral7b,0.95
+36657,1,Confirmation of follow-up question answer,2025-01-15T13:32:51Z,mistral7b,0.98
+36658,1,Discussion on skepticism and need for reassurance,2025-01-15T13:41:40Z,mistral7b,0.97
+36659,2,Skepticism towards response,2025-01-15T13:43:43Z,mistral7b,0.85
+36660,4,Reminiscing about past experiences,2025-01-15T13:43:54Z,mistral7b,0.9
+36661,4,Acknowledgement of past experience,2025-01-15T13:43:54Z,mistral7b,0.9
+36662,4,Recognition of user as OG,2025-01-15T13:44:28Z,mistral7b,0.95
+36663,4,Appreciation for user,2025-01-15T13:57:37Z,mistral7b,0.85
+36664,4,Agreement with appreciation,2025-01-15T13:59:11Z,mistral7b,0.9
