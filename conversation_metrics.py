@@ -40,6 +40,9 @@ def load_model_predictions(label_file: Path) -> pd.DataFrame:
         required_columns = {'message_id', 'conversation_id'}
         if not all(col in df.columns for col in required_columns):
             raise ValueError(f"Label file must contain columns: {required_columns}")
+        if df.empty:
+            logger.warning(f"Label file {label_file} contains zero messages.")
+            return None
         return df[['message_id', 'conversation_id']]
     except Exception as e:
         logger.error(f"Error loading predictions from {label_file}: {e}")
@@ -55,16 +58,16 @@ def calculate_ari(ground_truth: pd.DataFrame, predictions: pd.DataFrame) -> dict
         how='inner',
         suffixes=('_true', '_pred')
     )
-    
+
     # Drop any rows with NaN values
     merged = merged.dropna(subset=['conversation_id_true', 'conversation_id_pred'])
-    
+
     # Calculate ARI
     ari = adjusted_rand_score(
         merged['conversation_id_true'],
         merged['conversation_id_pred']
     )
-    
+
     return {
         'ari': ari,
         'n_messages': len(merged)  # Include number of messages for reference
@@ -83,56 +86,58 @@ def evaluate_conversation_clustering(group_dir: str) -> None:
     group_path = Path(group_dir)
     if not group_path.exists():
         raise ValueError(f"Directory does not exist: {group_dir}")
-    
+
     # Get group name from directory path
     group_name = group_path.name
-    
+
     # Find ground truth file with group name
     ground_truth_path = group_path / f"GT_conversations_{group_name}.csv"
     if not ground_truth_path.exists():
         raise ValueError(f"Ground truth file not found: {ground_truth_path}")
-    
+
     # Load ground truth
     logger.info(f"Loading ground truth from {ground_truth_path}")
     ground_truth = load_ground_truth(ground_truth_path)
-    
+
     # Find all label files
     label_files = list(group_path.glob("labels_*.csv"))
     if not label_files:
         raise ValueError(f"No label files found in {group_dir}")
-    
+
     # Calculate metrics for each model
     results = []
     for label_file in label_files:
         model_name = extract_model_name(label_file)
         logger.info(f"Processing predictions from model: {model_name}")
-        
+
         try:
             predictions = load_model_predictions(label_file)
+            if predictions is None:
+                continue
             metrics = calculate_ari(ground_truth, predictions)
-            
+
             # Add model name and file info to metrics
             metrics['model'] = model_name
             metrics['label_file'] = label_file.name
             results.append(metrics)
-            
+
         except Exception as e:
             logger.error(f"Error processing {label_file}: {e}")
             continue
-    
+
     if not results:
         raise ValueError("No results could be calculated from any label file")
-    
+
     # Create results DataFrame and save to CSV
     results_df = pd.DataFrame(results)
-    
+
     # Reorder columns to put model first
     columns = ['model', 'label_file', 'ari', 'n_messages']
     results_df = results_df[columns]
-    
+
     # Generate timestamp
     timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
-    
+
     # Save results with timestamp
     output_file = group_path / f"metrics_conversations_{group_name}_{timestamp}.csv"
     results_df.to_csv(output_file, index=False)
@@ -146,9 +151,9 @@ def main():
         'group_dir',
         help='Path to directory containing label files and ground truth'
     )
-    
+
     args = parser.parse_args()
     evaluate_conversation_clustering(args.group_dir)
 
 if __name__ == "__main__":
-    main() 
+    main()
